@@ -29,7 +29,7 @@
 }
 .nav-item a:hover{
     color:#fff !important;
-    background:#1d7c95;
+    background:#014C56;
 }
 .header-top .dropdown-menu .dropdown-item {
     color: #fff;
@@ -43,14 +43,14 @@
 .header-top .dropdown-menu {
     left: 0;
     margin-top: -2px;
-    background-color: #1d7c95;
+    background-color: #014C56;
     padding: 0;
     box-shadow: 0 0 2px #ccc;
     transition: opacity .5s ease .1s;
 }
 .header-top .navbar .nav-item.dropdown:hover {
     color: #fff;
-    background: #1d7c95;
+    background: #014C56;
 }
 .header-top .navbar .nav-item.dropdown:hover .nav-link, .header-top .navbar .nav-item.dropdown:hover a {
     color: #fff;
