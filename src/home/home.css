@@ -137,3 +137,6 @@
 .white-card.flex-inner p{
     font-size:16px;
 }
+.hw-item img{
+    border-radius:100%;
+}
