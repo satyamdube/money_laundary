@@ -24,9 +24,6 @@ const Header = () => {
                 <li className="nav-item">
                   <a className="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">About</a>
-                </li>
                 <li className="nav-item  dropdown">
                   <a className="nav-link" href="#">Our Services <span><i className="fa fa-angle-down" aria-hidden="true"></i></span></a>
                   <ul className="dropdown-menu">
@@ -39,6 +36,9 @@ const Header = () => {
                     </a></li>
                     <li><a className="dropdown-item" href="/our-skillsets">Shoe Cleaning and Repair</a></li>
                   </ul>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">About</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">What do we do</a>
