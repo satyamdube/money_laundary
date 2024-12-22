@@ -40,7 +40,7 @@ const Header = () => {
                   <a className="nav-link" href="#">Our story</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Contact</a>
+                  <a className="nav-link" href="#">Contact Us</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">Price</a>
