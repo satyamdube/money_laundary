@@ -14,6 +14,9 @@ const Header = () => {
 		</div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
+            <a className="navbar-brand" href="/">
+              <img src="./images/logo.png" alt="logo"/>
+            </a>
             <button 
               className="navbar-toggler" 
               type="button" 
@@ -26,7 +29,7 @@ const Header = () => {
             <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav action-buttons">
+              <ul className="navbar-nav ml-auto action-buttons">
                 <li className="nav-item">
                   <a className="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
@@ -49,9 +52,6 @@ const Header = () => {
                 <li className="nav-item">
                   <a className="nav-link" href="#">How We Work</a>
                 </li>
-                <li className="nav-item"><a className="navbar-brand" href="/">
-                  <img src="./images/logo.png" alt="logo"/>
-                </a></li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">Our story</a>
                 </li>
