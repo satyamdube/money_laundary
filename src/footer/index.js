@@ -3,7 +3,7 @@ import './footer.css';
 const Footer = () => {
   return (
     <footer id="colophon" className="site-footer" role="contentinfo">
-      <span class="Whatsapp-widg">
+      <span className="Whatsapp-widg">
         <a href="https://api.whatsapp.com/send?phone=9599227152&amp;text=Hi%2C%20I%20am%20interested%20in%20your%20services" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="52px" height="52px" clip-rule="evenodd">
           <path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"></path>
@@ -11,15 +11,15 @@ const Footer = () => {
         </svg>
         </a>
       </span>
-      <span class="cc-calto-action-ripple">
-        <a href="tel:9310000576"><i class="fa fa-phone" alt="Call 9310000576"></i></a><span class="num"></span>
+      <span className="cc-calto-action-ripple">
+        <a href="tel:9310000576"><i className="fa fa-phone" alt="Call 9310000576"></i></a><span className="num"></span>
       </span>
 	<div className="container">
 		<div className="site-info">
 		    <ul className="list-inline social-links">
-				<li><a target="_blank" href="https://www.facebook.com/thetidylaundry/" className="icon-facebook" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li><a target="_blank" href="https://www.instagram.com/thetidylaundry/" className="icon-instagram" title="Instagram"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>	
-        <li><a target="_blank" href="https://www.instagram.com/thetidylaundry/" className="icon-instagram" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>			
+				<li><a target="_blank" href="https://www.facebook.com/thetidylaundry/" className="icon-facebook" title="Facebook"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a target="_blank" href="https://www.instagram.com/thetidylaundry/" className="icon-instagram" title="Instagram"><i className="fa fa-youtube" aria-hidden="true"></i></a></li>	
+        <li><a target="_blank" href="https://www.instagram.com/thetidylaundry/" className="icon-instagram" title="Instagram"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>			
         </ul>
 				<div className="menu-footer-container"><ul id="footer-menu" className="menu"><li id="menu-item-181" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-181"><a href="https://tidylaundry.com/service-terms-conditions/">Service Terms &amp; Conditions</a></li>
         <li id="menu-item-182" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-182"><a href="https://tidylaundry.com/cookies-policy/">Cookies Policy</a></li>
@@ -30,6 +30,7 @@ const Footer = () => {
               
 		</div>
 	</div>
+  <div className="bubbleContainer"><div className="bubble-1"></div><div className="bubble-2"></div><div className="bubble-3"></div><div className="bubble-4"></div><div className="bubble-5"></div><div className="bubble-6"></div><div className="bubble-7"></div><div className="bubble-8"></div><div className="bubble-9"></div><div className="bubble-10"></div></div>
 </footer>
   );
 }

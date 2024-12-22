@@ -1,5 +1,6 @@
 .site-footer {
-    background: #fff;
+    background-color: #323232;
+    position: relative;
     text-align: center;
     padding: 30px 0;
     border-top: 1px solid #f4f4f2;
@@ -22,13 +23,14 @@
 }
 #footer-menu li a {
     padding: 0 5px;
-    font-size: 12px;
+    font-size: 15px;
     transition: all .3s ease;
-    color: #222;
+    color: #fff;
     text-decoration:none;
 }
 .site-info p {
-    font-size: 12px;
+    font-size: 15px;
+    color:#fff;
 }
 .site-info p {
     margin-bottom: 5px;
@@ -47,8 +49,8 @@
     display: block;
     border-radius: 50%;
     line-height: 39px;
-    border: 3px solid #014C56;
-    color: #014C56;
+    border: 3px solid #fff;
+    color: #fff;
     text-decoration: none;
     font-size: 20px;
     transition:0.5s ease;
@@ -109,4 +111,134 @@ span.cc-calto-action-ripple i{
     -ms-flex-align: center;
     align-items: center;
     text-decoration: none;
+}
+.bubbleContainer {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none
+}
+
+.bubbleContainer div[class^=bubble-] {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background: url(../bubbles-01.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    pointer-events: none
+}
+
+@media (max-width: 1024px) {
+    .bubbleContainer>:nth-child(even) {
+        display:none
+    }
+}
+
+.bubble-1 {
+    bottom: -5px;
+    left: 68%;
+    -webkit-animation: bubble-animation 4.5s infinite ease-in -6.57s;
+    animation: bubble-animation 4.5s infinite ease-in -6.57s
+}
+
+.bubble-2 {
+    bottom: -71px;
+    left: 97%;
+    -webkit-animation: bubble-animation 4.5s infinite ease-in -5.07s;
+    animation: bubble-animation 4.5s infinite ease-in -5.07s
+}
+
+.bubble-3 {
+    bottom: -71px;
+    left: 43%;
+    -webkit-animation: bubble-animation 4.5s infinite ease-in -6.73s;
+    animation: bubble-animation 4.5s infinite ease-in -6.73s
+}
+
+.bubble-4 {
+    bottom: -3.8px;
+    left: 82%;
+    -webkit-animation: bubble-animation 4.5s infinite ease-in -4.04s;
+    animation: bubble-animation 4.5s infinite ease-in -4.04s
+}
+
+.bubble-5 {
+    bottom: -73.4px;
+    left: 29%;
+    -webkit-animation: bubble-animation 4.5s infinite ease-in -3.11s;
+    animation: bubble-animation 4.5s infinite ease-in -3.11s
+}
+
+.bubble-6 {
+    bottom: -71px;
+    left: 41%;
+    -webkit-animation: bubble-animation 4.5s infinite ease-in -5.95s;
+    animation: bubble-animation 4.5s infinite ease-in -5.95s
+}
+
+.bubble-7 {
+    bottom: -79.4px;
+    left: 14%;
+    -webkit-animation: bubble-animation 4.5s infinite ease-in -3.68s;
+    animation: bubble-animation 4.5s infinite ease-in -3.68s
+}
+
+.bubble-8 {
+    bottom: -115.4px;
+    left: 90%;
+    -webkit-animation: bubble-animation 4.5s infinite ease-in -3.89s;
+    animation: bubble-animation 4.5s infinite ease-in -3.89s
+}
+
+.bubble-9 {
+    bottom: -44.6px;
+    left: 33%;
+    -webkit-animation: bubble-animation 4.5s infinite ease-in -1.09s;
+    animation: bubble-animation 4.5s infinite ease-in -1.09s
+}
+
+.bubble-10 {
+    bottom: -6.2px;
+    left: 59%;
+    -webkit-animation: bubble-animation 4.5s infinite ease-in -.96s;
+    animation: bubble-animation 4.5s infinite ease-in -.96s
+}
+
+@-webkit-keyframes bubble-animation {
+    0% {
+        -webkit-transform: translate3d(-50%,0,0);
+        transform: translate3d(-50%,0,0);
+        height: 1px;
+        width: 1px
+    }
+
+    100% {
+        -webkit-transform: translate3d(-50%,-280px,0);
+        transform: translate3d(-50%,-280px,0);
+        height: 75px;
+        width: 75px
+    }
+}
+
+@keyframes bubble-animation {
+    0% {
+        -webkit-transform: translate3d(-50%,0,0);
+        transform: translate3d(-50%,0,0);
+        height: 1px;
+        width: 1px
+    }
+
+    100% {
+        -webkit-transform: translate3d(-50%,-280px,0);
+        transform: translate3d(-50%,-280px,0);
+        height: 75px;
+        width: 75px
+    }
 }
