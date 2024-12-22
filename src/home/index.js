@@ -103,28 +103,28 @@ const Home = () => {
 				<div className="flex-row">
 											<div className="col-xs-12 col-sm-3 flex-item">
 							<div className="white-card flex-inner">
-								<img src="https://tidylaundry.com/wp-content/uploads/2019/06/dry-cleaners-in-chennai.png" alt="Dry Cleaners In Chennai"/>
+								<img src="./images/dry-cleaners-in-chennai.png" alt="Dry Cleaners In Chennai"/>
 								<h3>Mending &amp; Repairs</h3>
 								<p></p><p>We offer all-inclusive, one-stop laundry service in Chennai so that your clothes are altered and repaired within an affordable budget without wasting your time.</p><p></p>
 							</div>
 						</div>
 											<div className="col-xs-12 col-sm-3 flex-item">
 							<div className="white-card flex-inner">
-								<img src="https://tidylaundry.com/wp-content/uploads/2019/06/Best-Laundry-Services-In-Chennai.png" alt="Ironing Shop Near Me"/>
+								<img src="./images/Best-Laundry-Services-In-Chennai.png" alt="Ironing Shop Near Me"/>
 								<h3>Pressing</h3>
 								<p></p><p>Years of experience has helped our staff at the best laundry service in Chennai to understand the basics of ironing different kinds of fabric and applying them to ensure the best ironing service available.</p><p></p>
 							</div>
 						</div>
 											<div className="col-xs-12 col-sm-3 flex-item">
 							<div className="white-card flex-inner">
-								<img src="https://tidylaundry.com/wp-content/uploads/2019/06/Laundry-In-Chennai.png" alt="Laundry Service Near Me"/>
+								<img src="./images/Laundry-In-Chennai.png" alt="Laundry Service Near Me"/>
 								<h3>Sorting &amp; <br/>Post Spotting</h3>
 								<p></p><p>Sorting &amp; post spotting is done to ensure that spots &amp; stains are removed, clothes look clean &amp; refreshed. This is done for every garment that comes in at Tidy laundry and we promise quality care.</p><p></p>
 							</div>
 						</div>
 											<div className="col-xs-12 col-sm-3 flex-item">
 							<div className="white-card flex-inner">
-								<img src="https://tidylaundry.com/wp-content/uploads/2019/06/online-laundry-service-in-chennai.png" alt="Online Laundry Service In Chennai"/>
+								<img src="./images/online-laundry-service-in-chennai.png" alt="Online Laundry Service In Chennai"/>
 								<h3>Bundling &amp; <br/>Delivery</h3>
 								<p></p><p>Post sorting &amp; spotting, we collect all of your garments according to identification label which is bundled and delivered by the best laundry service in Chennai to your doorstep.</p><p></p>
 							</div>
