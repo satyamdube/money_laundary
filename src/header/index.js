@@ -3,6 +3,15 @@ import './header.css';
 const Header = () => {
   return (
     <header className='header-top'>
+      <div className="header-top-inr hidden-xs">
+			<div className="container">
+				<ul className="list-inline pull-left">
+					<li><a href="mailto:support@moneylaundry.com">support@moneylaundry.com</a></li>
+					<li>Helpline: <a href="tel:044 4745 3535">044 4745 3535</a> (8.30AM - 6PM)</li>
+				</ul>
+				<span className="pull-right">Laundry for all</span>
+			</div>
+		</div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
             <a className="navbar-brand" href="/">

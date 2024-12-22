@@ -3,6 +3,7 @@ import './home.css';
 const Home = () => {
   return (
     <div>
+		<div className='container'>
       <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -41,6 +42,7 @@ const Home = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
+		</div>
         <div className="container">
           <div className="outerTrustedPartner">
             <div className="contentInfoDataStay">

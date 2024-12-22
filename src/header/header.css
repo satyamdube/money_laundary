@@ -66,3 +66,26 @@
 .header-top .navbar .nav-item.dropdown:hover .nav-link, .header-top .navbar .nav-item.dropdown:hover a {
     color: #fff;
 }
+.header-top-inr {
+    padding: 6px 0;
+    color: #8d8a7b;
+    font-size: 13px;
+    background:#014C56;
+    border-bottom: 1px solid #f4f4f2;
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+.header-top-inr ul{
+    margin:0px;
+}
+.header-top-inr ul li a{
+    color:#fff;
+    text-decoration:none;
+}
+.header-top-inr ul li{
+    color:#fff;
+}
+.header-top-inr .pull-right{
+    color:#fff;
+}
