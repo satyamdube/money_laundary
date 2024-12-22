@@ -5,7 +5,7 @@ const Header = () => {
     <header className='header-top'>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
               <img src="./images/logo.png" alt="logo"/>
             </a>
             <button 
@@ -22,7 +22,7 @@ const Header = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ml-auto action-buttons">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Home</a>
+                  <a className="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li className="nav-item  dropdown">
                   <a className="nav-link" href="#">Our Services <span><i className="fa fa-angle-down" aria-hidden="true"></i></span></a>
