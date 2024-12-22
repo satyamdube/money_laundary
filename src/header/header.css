@@ -89,3 +89,7 @@
 .header-top-inr .pull-right{
     color:#fff;
 }
+.navbar-expand-lg .navbar-collapse{
+    border-left: 10px solid #014C56;
+    border-radius: 119px 0px 0px 0px;
+}
