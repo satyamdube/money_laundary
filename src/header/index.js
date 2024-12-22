@@ -27,8 +27,18 @@ const Header = () => {
                 <li className="nav-item">
                   <a className="nav-link" href="#">About</a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Services</a>
+                <li className="nav-item  dropdown">
+                  <a className="nav-link" href="#">Our Services <span><i className="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                  <ul className="dropdown-menu">
+                    <li><a aria-current="page" className="dropdown-item" href="/services">Laundry</a></li>
+                    <li><a className="dropdown-item" href="/seo-digital-marketing/">Steam Press</a></li>
+                    <li><a className="dropdown-item" href="/website-&amp;-applications">Dry Cleaning</a></li>
+                    <li><a className="dropdown-item" href="/our-skillsets">Pre and Post Spotting</a></li>
+                    <li><a className="dropdown-item" href="/our-skillsets">Collar and Cuff Cleaning</a></li>
+                    <li><a className="dropdown-item" href="/our-skillsets">Alterations and Repairs
+                    </a></li>
+                    <li><a className="dropdown-item" href="/our-skillsets">Shoe Cleaning and Repair</a></li>
+                  </ul>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">What do we do</a>
