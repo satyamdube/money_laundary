@@ -13,19 +13,23 @@
     padding:0px;
 }
 .header-top .bg-light .navbar-brand {
-    margin-right: 2rem;
+    margin-right: 4rem;
     padding:0 !important;
+    margin-left: 4rem;
 }
 .ml-auto, .mx-auto {
     margin-left: auto !important;
 }
 .navbar-brand img{
     max-width:100px;
+    margin-top:4px;
 }
 .nav-item a{
- font-weight:600;
- padding: 28px 15px !important;
- transition:0.5s ease;
+    padding: 28px 18.7px !important;
+    transition: 0.5s ease;
+    font-family: "Fira Sans", serif;
+    font-style: italic;
+    font-size: 17px;
 }
 .nav-item a:hover{
     color:#fff !important;
@@ -82,14 +86,23 @@
 .header-top-inr ul li a{
     color:#fff;
     text-decoration:none;
+    font-family: "Fira Sans", serif;
+    font-style: italic;
 }
 .header-top-inr ul li{
     color:#fff;
+    font-style: italic;
 }
 .header-top-inr .pull-right{
     color:#fff;
+    font-family: "Fira Sans", serif;
+    font-style: italic;
 }
-.navbar-expand-lg .navbar-collapse{
-    border-left: 10px solid #014C56;
-    border-radius: 119px 0px 0px 0px;
+.nav-item a.btn-style{
+    background: #014C56;
+    border: 1px solid #014C56;
+    color: #fff;
+    border-radius: 40px;
+    padding: 8px 27px !important;
+    margin-top: 18px;
 }
