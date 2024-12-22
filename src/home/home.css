@@ -13,6 +13,9 @@
     margin-bottom: 70px;
     border-radius:0px 0px 50px 50px;
 }
+.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon{
+    filter:inherit !important;
+}
 .outerTrustedPartner .contentInfoDataStay {
     width: 100%;
     display: -webkit-flex;
