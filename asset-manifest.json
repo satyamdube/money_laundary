@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.1ce97202.css",
-    "main.js": "/static/js/main.67ce22b6.js",
-    "static/js/488.35c84f4c.chunk.js": "/static/js/488.35c84f4c.chunk.js",
-    "static/media/bnrTextTure.jpg": "/static/media/bnrTextTure.a6844041aaae574b1850.jpg",
-    "static/media/bubbles-01.png": "/static/media/bubbles-01.93e6e971e2e4d43b26bc.png",
-    "index.html": "/index.html",
-    "main.1ce97202.css.map": "/static/css/main.1ce97202.css.map",
-    "main.67ce22b6.js.map": "/static/js/main.67ce22b6.js.map",
-    "488.35c84f4c.chunk.js.map": "/static/js/488.35c84f4c.chunk.js.map"
+    "main.css": "/money_laundary/static/css/main.ac85a67f.css",
+    "main.js": "/money_laundary/static/js/main.d7debf85.js",
+    "static/js/488.35c84f4c.chunk.js": "/money_laundary/static/js/488.35c84f4c.chunk.js",
+    "static/media/bnrTextTure.jpg": "/money_laundary/static/media/bnrTextTure.a6844041aaae574b1850.jpg",
+    "static/media/bubbles-01.png": "/money_laundary/static/media/bubbles-01.93e6e971e2e4d43b26bc.png",
+    "index.html": "/money_laundary/index.html",
+    "main.ac85a67f.css.map": "/money_laundary/static/css/main.ac85a67f.css.map",
+    "main.d7debf85.js.map": "/money_laundary/static/js/main.d7debf85.js.map",
+    "488.35c84f4c.chunk.js.map": "/money_laundary/static/js/488.35c84f4c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ce97202.css",
-    "static/js/main.67ce22b6.js"
+    "static/css/main.ac85a67f.css",
+    "static/js/main.d7debf85.js"
   ]
 }
