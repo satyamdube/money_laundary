@@ -1,13 +1,12 @@
 .header-top {
     width: 100%;
     display: inline-block;
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .2784313725490196);
     position:sticky;
     top:0;
     z-index:99;
 }
 .header-top .bg-light {
-    background: #fff !important;
+    background: #000 !important;
     width: 100%;
     box-sizing: border-box;
     padding:0px;
@@ -24,20 +23,32 @@
     margin-top:4px;
 }
 .nav-item a{
-    padding: 28px 18.7px !important;
+    padding: 8px 16px !important;
     transition: 0.5s ease;
-    font-family: "Fira Sans", serif;
     font-style: italic;
-    font-size: 17px;
+    font-size: 14px;
+    border-right: 1px solid #fff;
+    margin: 10px 0px;
+    color: #fff;
+}
+.nav-item:last-child a{
+    border:none;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color:#fff;
 }
 .nav-item a:hover{
     color:#fff !important;
-    background:#014C56;
 }
 .header-top .dropdown-menu .dropdown-item {
     color: #fff;
     padding: 10px !important;
     font-weight: 400;
+    margin:0px;
+    border-right:none;
+}
+.bookNow img{
+    max-width:90px;
 }
 .header-top .dropdown-item {
     border-bottom: 1px solid #4f5d6e;
@@ -46,14 +57,14 @@
 .header-top .dropdown-menu {
     left: 0;
     margin-top: -2px;
-    background-color: #014C56;
+    background-color: #000;
     padding: 0;
     box-shadow: 0 0 2px #ccc;
     transition: opacity .5s ease .1s;
 }
 .header-top .navbar .nav-item.dropdown:hover {
     color: #fff;
-    background: #014C56;
+    background: #000;
 }
 .header-top .navbar .nav-item.dropdown:hover .nav-link, .header-top .navbar .nav-item.dropdown:hover a {
     color: #fff;
@@ -73,7 +84,7 @@
     padding: 6px 0;
     color: #8d8a7b;
     font-size: 13px;
-    background:#014C56;
+    background:#000;
     border-bottom: 1px solid #f4f4f2;
     display: inline-block;
     width: 100%;
@@ -85,7 +96,7 @@
 .header-top-inr ul li a{
     color:#fff;
     text-decoration:none;
-    font-family: "Fira Sans", serif;
+
     font-style: italic;
 }
 .header-top-inr ul li{
@@ -94,7 +105,7 @@
 }
 .header-top-inr .pull-right{
     color:#fff;
-    font-family: "Fira Sans", serif;
+
     font-style: italic;
 }
 .nav-item a.btn-style{
