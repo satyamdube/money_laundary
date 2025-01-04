@@ -25,7 +25,6 @@ const Footer = () => {
         <li id="menu-item-182" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-182"><a href="https://tidylaundry.com/cookies-policy/">Cookies Policy</a></li>
         <li id="menu-item-214" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-214"><a rel="privacy-policy" href="https://tidylaundry.com/privacy-policy/">Privacy Policy</a></li>
         <li id="menu-item-219" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-219"><a href="https://tidylaundry.com/website-usage-policy/">Website Usage Policy</a></li>
-        <li id="menu-item-740" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-740"><a href="https://tidylaundry.com/tidy-sitemap/">Sitemap</a></li>
         </ul></div>				<p>© 2025 Copyright. Money Laundry &amp; Dry Cleaning Services. All Righs Reserved.			</p>
               
 		</div>

@@ -1,0 +1,65 @@
+
+.bannerInfoData{
+    width:100%;
+    display:inline-block;
+    background: url(../../public/images/bnrTextTure.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logoInfoDataNew {
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.logoInfoDataNew img{
+    max-width:600px;
+}
+.mightInfoData{
+    width:100%;
+    display:inline-block;
+    padding:40px 0px 60px;
+    background:#000;
+}
+.innerDataCard{
+    max-width:430px;
+    margin:0 auto;
+}
+.innerDataCard p{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 43px;
+    color: #fff;
+    margin: 0;
+}
+.moneyGIf{
+    width:100%;
+    display: inline-block;
+    margin: 50px 0px;
+}
+.moneyGIf img{
+    max-width:100%;
+}
+.linerData{
+    width:200px;
+    margin:0 auto;
+    height:1px;
+    background:#fff;
+    display: flow-root;
+    margin-bottom:80px;
+}
+.bookInfo{
+    width:100%;
+    display:inline-block;
+    text-align:center;
+}
+.bookInfo img{
+    max-width:258px;
+}
+.howItWork{
+    width:100%;
+}
+.howItWork img{
+    max-width:100%;
+}

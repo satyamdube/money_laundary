@@ -62,7 +62,7 @@
 span.cc-calto-action-ripple {
     z-index: 99999;
     position: fixed;
-    right: 2.5rem;
+    right:20px;
     bottom: 2rem;
     box-shadow:0px 0px 20px #ccc;
     background: #000;

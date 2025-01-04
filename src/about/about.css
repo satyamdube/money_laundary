@@ -1,0 +1,60 @@
+
+.meetOurFounder{
+    width:100%;
+    display:inline-block;
+}
+.headingInfo{
+    width:100%;
+    display:inline-block;
+    padding:40px 0px;
+    background:#000;
+}
+.headingInfo h3{
+    font-weight:400;
+    font-size:17px;
+    line-height:25px;
+    text-align:center;
+    color:#fff;
+    position: relative;
+}
+.headingInfo h3:after{
+    content:'';
+    position: absolute;
+    width:75px;
+    height:1px;
+    background:#FFFFFF;
+    margin:0 auto;
+    left:0;
+    right:0;
+    bottom:-12px;
+}
+.infoDataMeet{
+    width:100%;
+    display:inline-block;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.9780287114845938) 0%, rgba(0,0,0,0.3925945378151261) 48%, rgba(0,0,0,1) 100%);
+}
+.meetOwnerInfo{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding:60px 0px 50px;
+}
+.meetOwnerInfo p{
+    font-weight:400;
+    color:#fff;
+    line-height:15px;
+    margin:0 0 10px;
+    line-height:25px;
+    text-align:left;
+    font-size:14px;
+}
+.meetOwnerInfo p b{
+    font-weight:600;
+}
+.jaiSainInfoImg{
+    padding:0px 10px;
+}
+.infoDataMeet p{
+    color:#fff;
+}

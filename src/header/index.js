@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 import "./header.css";
 const Header = () => {
   return (
@@ -19,14 +20,10 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav action-buttons">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
-                  Home
-                </a>
+               <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  ABOUT US
-                </a>
+                <NavLink  className="nav-link" to="/about">ABOUT US</NavLink>
               </li>
               <li className="nav-item  dropdown">
                 <a className="nav-link" href="#">
@@ -37,63 +34,63 @@ const Header = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a
+                    <NavLink 
                       aria-current="page"
                       className="dropdown-item"
-                      href="/services"
+                      to="/services"
                     >
                       Laundry
-                    </a>
+                    </NavLink >
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/seo-digital-marketing/">
+                    <NavLink  className="dropdown-item" to="/seo-digital-marketing/">
                       Steam Press
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
+                    <NavLink 
                       className="dropdown-item"
-                      href="/website-&amp;-applications"
+                      to="/website-&amp;-applications"
                     >
                       Dry Cleaning
-                    </a>
+                    </NavLink> 
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/our-skillsets">
+                  <NavLink  className="dropdown-item" to="/our-skillsets">
                       Pre and Post Spotting
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/our-skillsets">
+                    <NavLink  className="dropdown-item" to="/our-skillsets">
                       Collar and Cuff Cleaning
-                    </a>
+                     </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/our-skillsets">
+                    <NavLink  className="dropdown-item" to="/our-skillsets">
                       Alterations and Repairs
-                    </a>
+                   </NavLink >
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/our-skillsets">
+                    <NavLink  className="dropdown-item" to="/our-skillsets">
                       Shoe Cleaning and Repair
-                    </a>
+                    </NavLink >
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink  className="nav-link" to="/how_we_work">
                   HOW WE WORK
-                </a>
+                  </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink  className="nav-link" to="/our_pricing">
                   OUR PRICING
-                </a>
+                </NavLink >
               </li>
             </ul>
           </div>
           <div className="ml-auto bookNow">
-             <a href=""><img src="./images/bookNow.png" alt="Book Now"/></a>
+             <NavLink  to="/book_now"><img src="./images/bookNow.png" alt="Book Now"/></NavLink >
           </div>
         </div>
       </nav>

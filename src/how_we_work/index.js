@@ -1,8 +1,8 @@
 import React from "react";
-import "./home.css";
+import "./how_we_work.css";
 import Header from "../header";
 import Footer from "../footer";
-const Home = () => {
+const HowWeWork = () => {
   return (
     <div>
 		<Header/>
@@ -14,7 +14,7 @@ const Home = () => {
 		<div className="mightInfoData">
 			<div className="container">
 				<div className="innerDataCard">
-					<p>WE MIGHT NOT BE ABLE TO WASH YOUR MONEY, BUT WE SURE CAN WASH YOUR CLOTHES LIKE ITS MONEY.</p>
+					<p>sds ABLE TO WASH YOUR MONEY, BUT WE SURE CAN WASH YOUR CLOTHES LIKE ITS MONEY.</p>
 					<div className="moneyGIf">
 						<img src="./images/money.gif" alt="money"/>
 					</div>
@@ -33,4 +33,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HowWeWork;
