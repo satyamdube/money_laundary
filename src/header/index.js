@@ -39,12 +39,12 @@ const Header = () => {
                       className="dropdown-item"
                       to="/services"
                     >
-                      Laundry
+                      CLEANING
                     </NavLink >
                   </li>
                   <li>
                     <NavLink  className="dropdown-item" to="/seo-digital-marketing/">
-                      Steam Press
+                       STEAM IRON
                     </NavLink>
                   </li>
                   <li>
@@ -52,28 +52,18 @@ const Header = () => {
                       className="dropdown-item"
                       to="/website-&amp;-applications"
                     >
-                      Dry Cleaning
+                      ALTERATIONS AND REPAIRS
                     </NavLink> 
                   </li>
                   <li>
                   <NavLink  className="dropdown-item" to="/our-skillsets">
-                      Pre and Post Spotting
+                     PRE AND POST SPOTTING
                     </NavLink>
                   </li>
                   <li>
                     <NavLink  className="dropdown-item" to="/our-skillsets">
-                      Collar and Cuff Cleaning
+                        SHOE SERVICE
                      </NavLink>
-                  </li>
-                  <li>
-                    <NavLink  className="dropdown-item" to="/our-skillsets">
-                      Alterations and Repairs
-                   </NavLink >
-                  </li>
-                  <li>
-                    <NavLink  className="dropdown-item" to="/our-skillsets">
-                      Shoe Cleaning and Repair
-                    </NavLink >
                   </li>
                 </ul>
               </li>
