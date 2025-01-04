@@ -17,14 +17,13 @@ const Footer = () => {
 	<div className="container">
 		<div className="site-info">
 		    <ul className="list-inline social-links">
-				<li><a target="_blank" href="https://www.facebook.com/thetidylaundry/" className="icon-facebook" title="Facebook"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li><a target="_blank" href="https://www.instagram.com/thetidylaundry/" className="icon-instagram" title="Instagram"><i className="fa fa-youtube" aria-hidden="true"></i></a></li>	
-        <li><a target="_blank" href="https://www.instagram.com/thetidylaundry/" className="icon-instagram" title="Instagram"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>			
+				<li><a target="_blank" href="" className="icon-facebook" title="Facebook"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a target="_blank" href="" className="icon-instagram" title="Instagram"><i className="fa fa-youtube" aria-hidden="true"></i></a></li>	
+        <li><a target="_blank" href="" className="icon-instagram" title="Instagram"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>			
         </ul>
-				<div className="menu-footer-container"><ul id="footer-menu" className="menu"><li id="menu-item-181" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-181"><a href="https://tidylaundry.com/service-terms-conditions/">Service Terms &amp; Conditions</a></li>
-        <li id="menu-item-182" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-182"><a href="https://tidylaundry.com/cookies-policy/">Cookies Policy</a></li>
-        <li id="menu-item-214" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-214"><a rel="privacy-policy" href="https://tidylaundry.com/privacy-policy/">Privacy Policy</a></li>
-        <li id="menu-item-219" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-219"><a href="https://tidylaundry.com/website-usage-policy/">Website Usage Policy</a></li>
+				<div className="menu-footer-container"><ul id="footer-menu" className="menu"><li id="menu-item-181" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-181"><a href="">Service Terms &amp; Conditions</a></li>
+        <li id="menu-item-182" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-182"><a href="">Cookies Policy</a></li>
+        <li id="menu-item-214" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-214"><a rel="privacy-policy" href="">Privacy Policy</a></li>
         </ul></div>				<p>© 2025 Copyright. Money Laundry &amp; Dry Cleaning Services. All Righs Reserved.			</p>
               
 		</div>
