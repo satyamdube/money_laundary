@@ -6,27 +6,25 @@ const HowWeWork = () => {
   return (
     <div>
 		<Header/>
-		<div className="bannerInfoData">
-			<div className="logoInfoDataNew">
-				<img src="./images/logoInfo.png" alt="logo banner"/>
+		<div className="meetOurFounder">
+			<div className="headingInfo">
+				<h3>HOW WE WORK</h3>
 			</div>
-		</div>
-		<div className="mightInfoData">
-			<div className="container">
-				<div className="innerDataCard">
-					<p>sds ABLE TO WASH YOUR MONEY, BUT WE SURE CAN WASH YOUR CLOTHES LIKE ITS MONEY.</p>
-					<div className="moneyGIf">
-						<img src="./images/money.gif" alt="money"/>
+			<div className="customScenting">
+				<div className="container">
+					<h4>CUSTOM SCENTING</h4>
+					<p>We Let you choose what you want your <br/> clothes to smell like.</p>
+					<div><span className="washingLiner"></span></div>
+					<div className="cntInfoCus">
+						<div className="leftCbtText">
+							<h2>PICK YOUR SCENT</h2>
+							<p>"Good Smell is powerful. It speaks directly to our emotions, memories, and imagination."— Aristotle</p>
+						</div>
+						<div></div>
 					</div>
-					<span className="linerData"></span>
-					<div className="bookInfo">
-					   <a href=""> <img src="./images/bookInfo.png" alt="logo banner"/></a>
-					</div>
+					<span className="linerInfo" style={{width:"234px"}}></span>
 				</div>
 			</div>
-		</div>
-		<div className="howItWork">
-		    <img src="./images/howItWork.jpg" alt="How it work"/>
 		</div>
 		<Footer/>
     </div>
