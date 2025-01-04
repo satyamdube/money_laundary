@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/money_laundary/static/css/main.6d0b7b48.css",
-    "main.js": "/money_laundary/static/js/main.a9a9355d.js",
+    "main.js": "/money_laundary/static/js/main.cd0147e4.js",
     "static/js/488.35c84f4c.chunk.js": "/money_laundary/static/js/488.35c84f4c.chunk.js",
     "static/media/bggif.gif": "/money_laundary/static/media/bggif.242e5f631653485a5aec.gif",
     "static/media/spray.gif": "/money_laundary/static/media/spray.520c9dab601cda4ab83b.gif",
@@ -9,11 +9,11 @@
     "static/media/bubbles-01.png": "/money_laundary/static/media/bubbles-01.93e6e971e2e4d43b26bc.png",
     "index.html": "/money_laundary/index.html",
     "main.6d0b7b48.css.map": "/money_laundary/static/css/main.6d0b7b48.css.map",
-    "main.a9a9355d.js.map": "/money_laundary/static/js/main.a9a9355d.js.map",
+    "main.cd0147e4.js.map": "/money_laundary/static/js/main.cd0147e4.js.map",
     "488.35c84f4c.chunk.js.map": "/money_laundary/static/js/488.35c84f4c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d0b7b48.css",
-    "static/js/main.a9a9355d.js"
+    "static/js/main.cd0147e4.js"
   ]
 }
