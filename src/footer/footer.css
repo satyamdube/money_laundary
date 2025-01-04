@@ -250,4 +250,5 @@ span.cc-calto-action-ripple i{
 }
 .ratingInfo img{
  max-width:195px;
+ border-radius:8px;
 }
