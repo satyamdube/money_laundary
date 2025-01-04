@@ -1,0 +1,111 @@
+
+.meetOurFounder{
+    width:100%;
+    display:inline-block;
+}
+.headingInfo{
+    width:100%;
+    display:inline-block;
+    padding:40px 0px;
+    background:#000;
+}
+.headingInfo h3{
+    font-weight:400;
+    font-size:17px;
+    line-height:25px;
+    text-align:center;
+    color:#fff;
+    position: relative;
+}
+.headingInfo h3:after{
+    content:'';
+    position: absolute;
+    width:75px;
+    height:1px;
+    background:#FFFFFF;
+    margin:0 auto;
+    left:0;
+    right:0;
+    bottom:-12px;
+}
+.cnct_right-wrapper {
+        max-width: 660px;
+        margin: 0;
+        padding: 20px;
+        background: url(../../public/images/contactdetail_back.png) top right no-repeat #666;
+        border-radius: 8px;
+        margin: 0 auto;
+        height: 100%;
+        text-align: left;
+        margin-bottom:50px;
+}
+.cnct_right-wrapper{
+    width:100%;
+    height:100%;
+}
+ul.contactul {
+    margin: 18px 0 0;
+}
+.contactul li {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.cntctinrhdng {
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+}
+span.cntctinrhdng img {
+    margin-right: 10px;
+}
+.contact-map {
+    max-height: 260px;
+    border: 1px solid #ccc;
+}
+.cntctinrinfo {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 5px;
+    display: inline-block;
+    color:#fff;
+    margin-left:50px;
+}
+span.hdng_cityname {
+    float: left;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #fff;
+    margin-left:50px;
+}
+.cntctinrhdng i{
+    background: #444;
+    padding: 8px;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+.commonbtn {
+    background: #589721;
+    margin-top: 10px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #589721;
+    padding: 0 32px;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: 0.3s;
+    float: left;
+    margin-right: -5px;
+}
+.contact-msg-btn {
+    float: none;
+}
