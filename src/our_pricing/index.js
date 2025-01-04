@@ -7,15 +7,17 @@ const OurPricing = () => {
     <div>
 		<Header/>
 		  <div className="pricingBannerInfo">
-			  <div className="container">
-				 <div className="pricingBnr">
-					<h2>OUR <br/> PRICING</h2>
-					<p>SAVE 25% ON YOUR FIRST ORDER WITH CODE TML25X</p>
-					<div className="browswPrices">
-						<a href="#offer">Browse our prices</a>
-						<div className="downArrow"><img src="./images/downArrow.png"/></div>
+			 <div className="priceBnrN">
+				<div className="container">
+					<div className="pricingBnr">
+						<h2>OUR <br/> PRICING</h2>
+						<p>SAVE 25% ON YOUR FIRST ORDER WITH CODE TML25X</p>
+						<div className="browswPrices">
+							<a href="#offer">Browse our prices</a>
+							<div className="downArrow"><img src="./images/downArrow.png"/></div>
+						</div>
 					</div>
-				 </div>
+			  </div>
 			  </div>
 			  <div className="pricedataManin">
 				 <div className="container">
