@@ -58,3 +58,99 @@
 .infoDataMeet p{
     color:#fff;
 }
+.indivialCleaning{
+    width:100%;
+    display:inline-block;
+    margin:30px 0px 0px;
+}
+.indivialCleaning h4{
+    font-weight:600;
+    font-size:30px;
+    line-height:30px;
+    color:#fff;
+    margin:0px 0px 5px;
+}
+.indivialCleaning p{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38px;
+    color: #fff;
+    margin: 10px 0px 0px;
+}
+.indivialCleaning img {
+    max-width: 520px;
+    margin-top: 25px;
+}
+.linerInfo{
+    width: 350px;
+    height: 1px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    display: inline-block;
+}
+.washingLiner{
+    width:66px;
+    height: 1px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    display: inline-block; 
+}
+.washingLinerBottom{
+    width: 170px;
+    height: 1px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    display: inline-block; 
+}
+.uvSter{
+    width:100%;
+    display:inline-block;
+    background: url(../../public/images/bggif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:50px 0px 80px;
+}
+.centerMax{
+    max-width:607px;
+    margin:0 auto;
+}
+.customScenting{
+    width:100%;
+    display:inline-block;
+    background: url(../../public/images/spray.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:60px 0px;
+}
+.customScenting h4{
+    text-align:center;
+    font-weight:600;
+    font-size:30px;
+    line-height:30px;
+    color:#fff;
+    margin:0px 0px 40px;
+}
+.customScenting p{
+   font-weight:400;
+   color:#fff;
+   line-height:44px;
+   font-size:22px;
+   margin:0px 0px 30px;
+}
+.cntInfoCus {
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:50px 0px 0px;
+}
+.leftCbtText{
+    width:500px;
+    text-align:left;
+}
+.leftCbtText h2{
+   font-weight:600;
+   color:#fff;
+   line-height:106px;
+   font-size:71px;
+}
