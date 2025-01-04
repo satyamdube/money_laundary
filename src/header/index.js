@@ -26,7 +26,7 @@ const Header = () => {
                 <NavLink  className="nav-link" to="/about">ABOUT US</NavLink>
               </li>
               <li className="nav-item  dropdown">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="">
                   OUR SERVICES{" "}
                   <span>
                     <i className="fa fa-angle-down" aria-hidden="true"></i>
@@ -85,6 +85,11 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink  className="nav-link" to="/our_pricing">
                   OUR PRICING
+                </NavLink >
+              </li>
+              <li className="nav-item">
+                <NavLink  className="nav-link" to="/our_pricing">
+                  CONTACT US
                 </NavLink >
               </li>
             </ul>
