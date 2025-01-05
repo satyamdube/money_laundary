@@ -131,6 +131,8 @@
     width:100%;
     display:inline-block;
     margin-top:30px;
+    padding: 0px 130px;
+    box-sizing: border-box;
 }
 .IndivusualInfo h3{
     text-align: center;

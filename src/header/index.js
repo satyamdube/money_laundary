@@ -37,31 +37,31 @@ const Header = () => {
                     <NavLink 
                       aria-current="page"
                       className="dropdown-item"
-                      to="/services"
+                      to="/cleaning"
                     >
                       CLEANING
                     </NavLink >
                   </li>
                   <li>
-                    <NavLink  className="dropdown-item" to="/seo-digital-marketing/">
+                    <NavLink  className="dropdown-item" to="/steam_iron">
                        STEAM IRON
                     </NavLink>
                   </li>
                   <li>
                     <NavLink 
                       className="dropdown-item"
-                      to="/website-&amp;-applications"
+                      to="/alterations"
                     >
                       ALTERATIONS AND REPAIRS
                     </NavLink> 
                   </li>
                   <li>
-                  <NavLink  className="dropdown-item" to="/our-skillsets">
+                  <NavLink  className="dropdown-item" to="/spotting">
                      PRE AND POST SPOTTING
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink  className="dropdown-item" to="/our-skillsets">
+                    <NavLink  className="dropdown-item" to="/shoe">
                         SHOE SERVICE
                      </NavLink>
                   </li>

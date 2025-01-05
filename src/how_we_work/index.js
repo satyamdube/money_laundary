@@ -91,7 +91,7 @@ const HowWeWork = () => {
 					</div>
 					</div>
 				</div>
-			<div className="customScenting">
+			{/* <div className="customScenting">
 				<div className="container">
 					<h4>CUSTOM SCENTING</h4>
 					<p>We Let you choose what you want your <br/> clothes to smell like.</p>
@@ -105,7 +105,7 @@ const HowWeWork = () => {
 					</div>
 					<span className="linerInfo" style={{width:"234px"}}></span>
 				</div>
-			</div>
+			</div> */}
 		</div>
 		<Footer/>
     </div>

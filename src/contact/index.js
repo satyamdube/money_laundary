@@ -43,7 +43,7 @@ const Contact = () => {
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.2669189677526!2d77.12624677181033!3d28.741446613113276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d013d2231f9e5%3A0x9876ec508504301a!2sGinger+Webs+Pvt.+Ltd.!5e0!3m2!1sen!2sin!4v1414564989364" width="100%" height="450" frameborder="0"></iframe>
                 </div> */}
             </article>
-		<div className="customScenting">
+		{/* <div className="customScenting">
 				<div className="container">
 					<h4>CUSTOM SCENTING</h4>
 					<p>We Let you choose what you want your <br/> clothes to smell like.</p>
@@ -57,7 +57,7 @@ const Contact = () => {
 					</div>
 					<span className="linerInfo" style={{width:"234px"}}></span>
 				</div>
-			</div>
+			</div> */}
 		<Footer/>
     </div>
   );

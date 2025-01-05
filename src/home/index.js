@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 import "./home.css";
 import Header from "../header";
 import Footer from "../footer";
@@ -20,7 +21,7 @@ const Home = () => {
 					</div>
 					<span className="linerData"></span>
 					<div className="bookInfo">
-					   <a href=""> <img src="./images/bookInfo.png" alt="logo banner"/></a>
+            <NavLink  to="/book_now"> <img src="./images/bookInfo.png" alt="logo banner"/></NavLink>
 					</div>
 				</div>
 			</div>
