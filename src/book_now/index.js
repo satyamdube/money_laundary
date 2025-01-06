@@ -21,16 +21,15 @@ const BookNow = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
   const handleSubmit = async (e) => {
 	e.preventDefault(); // Prevent the form from reloading the page
 	try {
-	  const response = await fetch("https://your-backend-api-url.com/submit", {
+	  const response = await fetch("https://reqres.in/api/users", {
 		method: "POST",
 		headers: { "Content-Type": "application/json" },
 		body: JSON.stringify(formData),
 	  });
-  
+    console.log(formData, "satyam");
 	  if (response.ok) {
 		// Alert success message
 		alert("Your data has been submitted successfully. We will contact you as soon as possible.");
