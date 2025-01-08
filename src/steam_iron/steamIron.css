@@ -17,12 +17,12 @@
     background-size: cover;
     min-height:100vh;
 }
-.cleaningOuter::after{
+.cleaningOuter.streamInfo::after{
     content: '';
     position: absolute;
     width:100%;
     height: 100%;
-    background: #000000cf;
+    background: #00000047;
     margin: 0 auto;
     left: 0;
     right: 0;

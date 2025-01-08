@@ -28,11 +28,10 @@ const About = () => {
                              At The Money Laundry, Ashish oversees the use of advanced, eco-friendly chemicals and technologies, ensuring that every garment is cleaned safely and effectively. His dedication to quality and sustainability underpins the company’s mission to offer superior, health-conscious services.</p>
 						</div>
 					</div>
-					<p>Together, Jai and Ashish are committed to redefining fabric care in India, providing a transparent, efficient, and 
-					world-class service experience.</p>
-					<br/>
 				</div>
 			</div>
+			<div className="text-center bor"><p>Together, Jai and Ashish are committed to redefining fabric care in India, providing a transparent, efficient, and <br/>
+			world-class service experience.</p></div>
 			<div className="headingInfo">
 				<h3>WHY US?</h3>
 				<div className="indivialCleaning">
@@ -46,10 +45,11 @@ const About = () => {
 			</div>
 			<div className="uvSter">
 				<div className="centerMax">
-					<div className="indivialCleaning">
+					<div className="indivialCleaning uv">
 						<h4>UV Sterilization</h4>
 						<span className="linerInfo" style={{width:"234px"}}></span>
 						<p>After Being processed your clothes go through a UV light Sanitisation room, this process kills all the bacteria without the use of harmful chemicals.</p>
+						<img src="./images/uv.png" alt="Washing machine"/>
 					</div>
 				</div>
 			</div>

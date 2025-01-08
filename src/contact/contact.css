@@ -9,18 +9,21 @@
     padding:40px 0px;
     background:#000;
 }
+.headingInfo.get{
+    margin-top:40px;
+}
 .headingInfo h3{
-    font-weight:400;
+    font-weight:600;
     font-size:17px;
     line-height:25px;
     text-align:center;
     color:#fff;
     position: relative;
 }
-.headingInfo h3:after{
+.headingInfo.get h3:after{
     content:'';
     position: absolute;
-    width:75px;
+    width:186px;
     height:1px;
     background:#FFFFFF;
     margin:0 auto;
@@ -28,84 +31,57 @@
     right:0;
     bottom:-12px;
 }
-.cnct_right-wrapper {
-        max-width: 660px;
-        margin: 0;
-        padding: 20px;
-        background: url(../../public/images/contactdetail_back.png) top right no-repeat #666;
-        border-radius: 8px;
-        margin: 0 auto;
-        height: 100%;
-        text-align: left;
-        margin-bottom:50px;
+.formDataNew{
+    max-width:700px;
+    margin:0px auto 18px;
 }
-.cnct_right-wrapper{
+.inputInfoDataForm{
     width:100%;
-    height:100%;
+    display:inline-block;
+    margin-bottom:15px;
 }
-ul.contactul {
-    margin: 18px 0 0;
-}
-.contactul li {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 20px;
-}
-.cntctinrhdng {
-    color: #fff;
-    font-size: 14px;
-    display: inline-block;
-    width: 100%;
-    font-weight: 700;
-}
-span.cntctinrhdng img {
-    margin-right: 10px;
-}
-.contact-map {
-    max-height: 260px;
-    border: 1px solid #ccc;
-}
-.cntctinrinfo {
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 5px;
-    display: inline-block;
+.inputInfoDataForm input{
+    padding:10px;
+    border:1px solid #fff;
     color:#fff;
-    margin-left:50px;
+    width:100%;
+    box-sizing: border-box;
+    outline:none;
+    background:#0000;
 }
-span.hdng_cityname {
-    float: left;
-    width: 100%;
-    font-weight: 700;
-    font-size: 14px;
-    margin-top: 20px;
-    color: #fff;
-    margin-left:50px;
+.inputInfoDataForm textarea{
+    padding:10px;
+    border:1px solid #fff;
+    color:#fff;
+    width:100%;
+    box-sizing: border-box;
+    outline:none;
+    background:#0000;
+    min-height:100px;
+    resize: none;
 }
-.cntctinrhdng i{
-    background: #444;
-    padding: 8px;
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
+.inputInfoDataForm button{
+    padding:10px;
+    border:1px solid #fff;
+    color:#fff;
+    width:100%;
+    box-sizing: border-box;
+    outline:none;
+    background:#0000;
     text-align: center;
-    margin-right: 10px;
 }
-.commonbtn {
-    background: #589721;
-    margin-top: 10px;
-    height: 36px;
-    line-height: 36px;
-    display: inline-block;
-    color: #fff;
-    border: 1px solid #589721;
-    padding: 0 32px;
-    border-radius: 3px;
-    font-size: 14px;
-    transition: 0.3s;
-    float: left;
-    margin-right: -5px;
+.inputInfoDataForm p{
+    font-size:17px;
+    color:rgba(255, 255, 255, 1);
+    margin: 15px 0px 0px;
 }
-.contact-msg-btn {
-    float: none;
+.socialLink{
+    width:100%;
+    display:inline-block;
+    padding:20px 0px;
+    text-align:center;
+    border-top:1px solid #fff;
+}
+.socialLink a  img{
+    max-width:160px;
 }

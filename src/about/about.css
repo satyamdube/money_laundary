@@ -38,16 +38,32 @@
     width:100%;
     display:flex;
     justify-content:space-between;
-    padding:60px 0px 50px;
+}
+.text-center.bor{
+    border-top: 1px solid #fff;
+    padding:10px 0px;
+    border-bottom: 1px solid #fff;
+}
+.text-center.bor p{
+    margin:0px;
+    font-size:17px;
+    line-height:43px;
+    color:#fff;
 }
 .meetOwnerInfo p{
     font-weight:400;
     color:#fff;
-    line-height:15px;
-    margin:0 0 10px;
-    line-height:25px;
-    text-align:left;
-    font-size:14px;
+    line-height: 18px;
+    margin: 0 0 10px;
+    text-align: left;
+    font-size: 12px;
+}
+.jaiSainInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: end;
+    padding-bottom: 15px;
 }
 .meetOwnerInfo p b{
     font-weight:600;
@@ -153,4 +169,7 @@
    color:#fff;
    line-height:106px;
    font-size:71px;
+}
+.indivialCleaning.uv img{
+    max-width:327px;
 }
