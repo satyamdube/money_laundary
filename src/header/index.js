@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="header-top">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container">
+        <div className="d-flex align-items-center justify-content-between w-100">
           <button
             className="navbar-toggler"
             type="button"
@@ -84,7 +84,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div className="ml-auto bookNow">
+          <div className="ml-auto bookNow pe-3">
              <NavLink  to="/book_now"><img src="./images/bookNow.png" alt="Book Now"/></NavLink >
           </div>
         </div>
