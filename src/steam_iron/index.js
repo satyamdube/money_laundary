@@ -10,11 +10,11 @@ const StreamIron = () => {
             <div className="container">
                 <div className="dataBoxInfo">
                     <h3>STEAM IRON</h3>
-                    <p>Every garment is expertly steamed, leaving it impeccably crease-free and Every garment is delivered hung, ready to wear. </p>
-                    <div><span className="washingLiner"></span></div>
+                    <p>Every garment is expertly steamed, leaving <br/>it impeccably crease-free and Every garment <br/>is delivered hung, ready to wear. </p>
+                    <div><span className="steamLiner"></span></div>
                 </div>
                 <div class="perfectInfo">
-                  <p>"Perfectly ironed clothes are the silent heralds of dignity and elegance."<br/> — Oscar Wilde</p>
+                  <p>"Perfectly ironed clothes are the silent <br/>heralds of dignity and elegance."<br/> — Oscar Wilde</p>
                 </div>
             </div>
         </div>

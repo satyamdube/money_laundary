@@ -34,7 +34,7 @@
 .dataBoxInfo h3:after {
     content: '';
     position: absolute;
-    width: 75px;
+    width: 441px;
     height: 1px;
     background: #FFFFFF;
     margin: 0 auto;

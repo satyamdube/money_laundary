@@ -10,11 +10,11 @@ const Shoe = () => {
             <div className="container">
                 <div className="dataBoxInfo">
                     <h3>SHOE SERVICE</h3>
-                    <p>From cleaning and polishing to repairs and full restorations, we bring your shoes back to life with expert care. Preserve their style, comfort, and durability with our specialized services.</p>
+                    <p>From cleaning and polishing to repairs and full <br/>restorations, we bring your shoes back to life with expert <br/>care. Preserve their style, comfort, and durability with <br/>our specialized services.</p>
                     <div><span className="washingLiner"></span></div>
                 </div>
                 <div class="perfectInfo">
-                  <p>Soles may carry you, but only clean shoes leave a lasting impression." 
+                  <p>Soles may carry you, but only clean <br/>shoes leave a lasting impression." 
                  <br/> –  Winston Churchill</p>
                 </div>
             </div>

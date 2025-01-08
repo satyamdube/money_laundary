@@ -74,3 +74,10 @@
     text-align:left;
     color:#fff;
 }
+.steamLiner{
+    width:93px;
+    height: 1px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    display: inline-block; 
+}

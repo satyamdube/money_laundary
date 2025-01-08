@@ -27,6 +27,9 @@ const Home = () => {
 			</div>
 		</div>
 		<div className="howItWork">
+		<div className="headingInfo">
+				<h3>HOW IT WORKS ?</h3>
+			</div>
 		    <img src="./images/howItWork.jpg" alt="How it work"/>
 		</div>
 		<Footer/>

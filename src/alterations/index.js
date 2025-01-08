@@ -10,7 +10,7 @@ const Alterations = () => {
             <div className="container">
                 <div className="dataBoxInfo">
                     <h3>ALTERATIONS AND REPAIRS</h3>
-                    <p>We tailor your garments to perfection, ensuring they fit your needs and style seamlessly. From precise alterations to invisible repairs, our experts ensure your clothes feel as good as new while matching your unique preferences.</p>
+                    <p>We tailor your garments to perfection, ensuring they fit <br/>your needs and style seamlessly. From precise <br/>alterations to invisible repairs, our experts ensure your <br/>clothes feel as good as new while matching your unique <br/>preferences.</p>
                     <div><span className="washingLiner"></span></div>
                 </div>
             </div>

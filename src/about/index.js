@@ -48,7 +48,7 @@ const About = () => {
 					<div className="indivialCleaning uv">
 						<h4>UV Sterilization</h4>
 						<span className="linerInfo" style={{width:"234px"}}></span>
-						<p>After Being processed your clothes go through a UV light Sanitisation room, this process kills all the bacteria without the use of harmful chemicals.</p>
+						<p>After Being processed your clothes go <br/>through a UV light Sanitisation room, this <br/>process kills all the bacteria without the use <br/>of harmful chemicals.</p>
 						<img src="./images/uv.png" alt="Washing machine"/>
 					</div>
 				</div>
@@ -60,8 +60,8 @@ const About = () => {
 					<div><span className="washingLiner"></span></div>
 					<div className="cntInfoCus">
 						<div className="leftCbtText">
-							<h2>PICK YOUR SCENT</h2>
-							<p>"Good Smell is powerful. It speaks directly to our emotions, memories, and imagination." — Aristotle</p>
+							<h2>PICK <br/>YOUR <br/>SCENT</h2>
+							<p>"Good Smell is powerful. It speaks <br/>directly to our emotions, memories,<br/> and imagination."<br/> — Aristotle</p>
 						</div>
 						<div></div>
 					</div>

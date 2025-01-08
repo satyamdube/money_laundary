@@ -10,8 +10,8 @@ const Cleaning = () => {
             <div className="container">
                 <div className="dataBoxInfo">
                     <h3>CLEANING</h3>
-                    <p>Our cleaning process uses fabric-specific, eco-friendly chemicals tailored to the unique thread count and material of each garment. Whether it’s delicate silks, fine wools, or everyday wear, we ensure impeccable cleanliness while preserving the integrity and longevity of your clothes.</p>
-                    <div><span className="washingLiner"></span></div>
+                    <p>Our cleaning process uses fabric-specific, eco-friendly <br/>chemicals tailored to the unique thread count and <br/>material of each garment. Whether it’s delicate silks, fine <br/>wools, or everyday wear, we ensure impeccable <br/>cleanliness while preserving the integrity and longevity <br/>of your clothes.</p>
+                    <div><span className="cleaningLiner"></span></div>
                 </div>
             </div>
         </div>
