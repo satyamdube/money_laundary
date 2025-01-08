@@ -4,236 +4,68 @@ import Header from "../header";
 import Footer from "../footer";
 
 const BookNow = () => {
-  const [formData, setFormData] = useState({
-    area: "",
-    service: "",
-    pickupDate: "",
-    pickupTime: "",
-    dropoffDate: "",
-    dropoffTime: "",
-    name: "",
-    email: "",
-    phone: "",
-    address: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-  const handleSubmit = async (e) => {
-	e.preventDefault(); // Prevent the form from reloading the page
-	try {
-	  const response = await fetch("https://reqres.in/api/users", {
-		method: "POST",
-		headers: { "Content-Type": "application/json" },
-		body: JSON.stringify(formData),
-	  });
-    console.log(formData, "satyam");
-	  if (response.ok) {
-		// Alert success message
-		alert("Your data has been submitted successfully. We will contact you as soon as possible.");
-		
-		// Reset the form data
-		setFormData({
-		  area: "",
-		  service: "",
-		  pickupDate: "",
-		  pickupTime: "",
-		  dropoffDate: "",
-		  dropoffTime: "",
-		  name: "",
-		  email: "",
-		  phone: "",
-		  address: "",
-		});
-	  } else {
-		// Alert failure message
-		alert("Failed to submit the form. Please try again.");
-	  }
-	} catch (error) {
-	  console.error("Error submitting form:", error);
-	  alert("An error occurred. Please try again later.");
-	}
-  };  
-
   return (
     <div>
       <Header />
-      <div className="meetOurFounder">
-        <div className="headingInfo bookNow">
-          <h3>BOOK NOW</h3>
-          <br />
-          <p>
-            For an easy & quick laundry experience. Please provide details
-            below. <br /> Our customer care executive will get in touch.
-          </p>
+        <div className="placeOurderInfoOuter">
+           <div className="topContentInfo">
+              <div className="logoCenter"><img src="./images/whiteLogo.png" alt="Washing machine"/></div>
+              <span className="linerInfo"></span>
+              <h2> JUST A REMINDER...</h2>
+              <h3>ITEMS</h3>
+              <p><span>.</span> No need to list your items, just place them in a bag clearly labelled with your name and drop off at your building reception or we can come collect it. </p>
+              <p><span>.</span> Our expert team check them after collection and send you an email including prices.</p>
+              <h3>PRICES</h3>
+              <p><span>.</span> The minimum order value is 650/- INR. If you place an order for less than 650/- it will be rounded up.</p>
+              <p><span>.</span> View our full PRICE LIST to find out how much your order will be. </p>
+              <h3>WANT TO GET HOLD OF US?</h3>
+              <p><span>.</span> If you have any questions at all you can contact us at +91 92666 12700  or contactus@themoneylaundry.in</p>
+           </div>
+           <span className="washingLinerBottom mt-5 mb-5"></span>
+           <br/>
+           <div className="container">
+              <div className="formDataInnerInfo mb-4">
+                 <div className="innerCardInfo">
+                    <div className="rowInput">
+                       <input type="text" placeholder="Name*"/>
+                    </div>
+                    <div className="rowInput">
+                       <input type="text" placeholder="Email*"/>
+                    </div>
+                    <div className="rowInput">
+                       <input type="text" placeholder="Address*"/>
+                    </div>
+                    <div className="rowInput">
+                       <input type="text" placeholder="Phone no*"/>
+                    </div>  
+                 </div>
+                 <br/>
+                 <div className="mt-5 mb-5 noteData">
+                    <p>Note: <br/> If you do not select a specific pickup time and date, we will schedule your pickup at our standard time after confirming the details with you. Rest assured, our team will reach out to ensure the timing is convenient for you.</p>
+                 </div>
+                 <div className="row">
+                    <div className="col-sm-6">
+                      <div className="rowInput">
+                        <input type="text" placeholder="Pick up date*"/>
+                      </div>
+                    </div>
+                    <div className="col-sm-6">
+                      <div className="rowInput">
+                        <input type="text" placeholder="Pick up time*"/>
+                      </div>
+                    </div>
+                 </div>
+                 <br/>
+                 <div className="innerCardInfo mt-5 nrwTxt">
+                   <h4>Special Instruction</h4>
+                    <div className="rowInput">
+                       <textarea placeholder="Any repairs and alterations needed/ Stain details/ Damage Informations? Eg. Shorten Grey Reiss trouser by 3 Cm"></textarea>
+                    </div>
+                 </div>
+                 <div className="submit"><button className="btnIngo">Submit</button></div>
+              </div>
+           </div>
         </div>
-      </div>
-      <div className="container">
-        <form onSubmit={handleSubmit}>
-          <div className="formDataIn">
-            <div className="formInfoNewRow">
-              <h3>Choose area and service</h3>
-              <div className="row">
-                <div className="col-sm-6">
-                  <select
-                    name="area"
-                    value={formData.area}
-                    onChange={handleChange}
-                    className="form-control"
-                    required
-                  >
-                    <option value="">Choose Area</option>
-                    <option value="Noida Sector 136">Noida Sector 136</option>
-                    <option value="Noida Sector 150">Noida Sector 150</option>
-                    <option value="Noida Electronics City">
-                      Noida Electronics City
-                    </option>
-                  </select>
-                </div>
-                <div className="col-sm-6">
-                  <select
-                    name="service"
-                    value={formData.service}
-                    onChange={handleChange}
-                    className="form-control"
-                    required
-                  >
-                    <option value="">Choose a Service</option>
-                    <option value="Dry Cleaning">Dry Cleaning</option>
-                    <option value="Wash and Dry">Wash and Dry</option>
-                    <option value="Wash and Press">Wash and Press</option>
-                    <option value="Premium/Individual Wash">
-                      Premium/Individual Wash
-                    </option>
-                    <option value="WP60">WP60</option>
-                    <option value="WP125">WP125</option>
-                    <option value="WP200">WP200</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div className="formInfoNewRow">
-              <h3>Choose a schedule</h3>
-              <div className="row">
-                <div className="col-sm-6">
-                  <label>Pickup Date*</label>
-                  <input
-                    type="date"
-                    name="pickupDate"
-                    value={formData.pickupDate}
-                    onChange={handleChange}
-                    className="form-control"
-                    required
-                  />
-                </div>
-                <div className="col-sm-6">
-                  <label>Pickup Time*</label>
-                  <select
-                    name="pickupTime"
-                    value={formData.pickupTime}
-                    onChange={handleChange}
-                    className="form-control"
-                    required
-                  >
-                    <option value="">Select Time</option>
-                    <option value="8 - 11">8 - 11</option>
-                    <option value="11 - 2">11 - 2</option>
-                    <option value="2 - 5">2 - 5</option>
-                    <option value="5 - 8">5 - 8</option>
-                  </select>
-                </div>
-              </div>
-              <div className="row mt-3">
-                <div className="col-sm-6">
-                  <label>Dropoff Date*</label>
-                  <input
-                    type="date"
-                    name="dropoffDate"
-                    value={formData.dropoffDate}
-                    onChange={handleChange}
-                    className="form-control"
-                    required
-                  />
-                </div>
-                <div className="col-sm-6">
-                  <label>Dropoff Time*</label>
-                  <select
-                    name="dropoffTime"
-                    value={formData.dropoffTime}
-                    onChange={handleChange}
-                    className="form-control"
-                    required
-                  >
-                    <option value="">Select Time</option>
-                    <option value="8 - 11">8 - 11</option>
-                    <option value="11 - 2">11 - 2</option>
-                    <option value="2 - 5">2 - 5</option>
-                    <option value="5 - 8">5 - 8</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div className="formInfoNewRow">
-              <h3>About you</h3>
-              <div className="row">
-                <div className="col-sm-6">
-                  <label>Name*</label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="form-control"
-                    required
-                  />
-                </div>
-                <div className="col-sm-6">
-                  <label>Email*</label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="form-control"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="row mt-3">
-                <div className="col-sm-6">
-                  <label>Phone*</label>
-                  <input
-                    type="number"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="form-control"
-                    required
-                  />
-                </div>
-                <div className="col-sm-6">
-                  <label>Address*</label>
-                  <input
-                    type="text"
-                    name="address"
-                    value={formData.address}
-                    onChange={handleChange}
-                    className="form-control"
-                    required
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="formInfoNewRow text-left">
-              <button type="submit" className="btn btn-success">
-                Submit
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
       <Footer />
     </div>
   );

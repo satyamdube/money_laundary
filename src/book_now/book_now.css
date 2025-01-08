@@ -1,67 +1,90 @@
-
-.meetOurFounder{
+.placeOurderInfoOuter{
     width:100%;
     display:inline-block;
+    padding:30px 0px;
 }
-.headingInfo{
+.topContentInfo{
     width:100%;
     display:inline-block;
-    padding:40px 0px;
-    background:#000;
-}
-.headingInfo h3{
-    font-weight:400;
-    font-size:17px;
-    line-height:25px;
     text-align:center;
-    color:#fff;
+}
+.logoCenter img{
+  max-width:200px;
+}
+.topContentInfo h2{
+  font-weight:700;
+  font-size:14px;
+  line-height:14px;
+  color:rgba(255, 255, 255, 1);
+  margin:50px 0px 30px;
+}
+.topContentInfo h3{
+    font-weight:700;
+    font-size:14px;
+    line-height:14px;
+    color:rgba(255, 255, 255, 1);
+    margin:0px 0px 20px;
+}
+.topContentInfo p{
+    font-size:14px;
+    line-height:14px;
+    color:rgba(255, 255, 255, 1);
+    margin:0px 0px 20px;
+}
+.topContentInfo p span{
+    vertical-align: middle;
     position: relative;
+    top: -4px;
+    font-size: 19px;
+    margin-right: 4px;
 }
-.headingInfo h3:after{
-    content:'';
-    position: absolute;
-    width:75px;
-    height:1px;
-    background:#FFFFFF;
+.innerCardInfo{
+    max-width:340px;
     margin:0 auto;
-    left:0;
-    right:0;
-    bottom:-12px;
 }
-.headingInfo.bookNow p{
-    margin-top: 5px;
-    color: #fff;
-    font-weight: 600;
-    line-height: 32px;
-}
-.formDataIn{
-    margin-bottom:50px;
-}
-.formInfoNewRow{
+.rowInput{
     width:100%;
     display:inline-block;
-    margin: 20px 0px 30px;
+    margin-bottom:15px;
 }
-.formInfoNewRow h3{
-    color: #fff;
-    font-size: 16px;
-    margin: 15px 0 20px;
-    font-weight:600;
-    text-align:left;
+ .rowInput input{
+    padding:10px;
+    background-color:#fff;
+    outline:none;
+    width:100%;
 }
-.formInfoNewRow label{
+.rowInput textarea{
+    padding:10px;
+    background-color:#fff;
+    outline:none;
+    width:100%;
+    resize:none;
+    min-height:190px;
+    font-weight:400;
+    letter-spacing:2px;
+    line-height:23px;
+    padding-top: 43px;
+    text-align: center;
+}
+.noteData{
+    width:100%;
+    display:inline-block;
+    padding:0px 100px;
+    box-sizing: border-box;
+}
+.noteData p{
     color:#fff;
     text-align:left;
-    margin:0px 0px 6px;
-    display: block;
+    font-weight:400;
+    font-size:12px;
+    line-height:20px;
+    margin:0px;
 }
-.formInfoNewRow.text-left{
-    text-align:left;
-    margin-top:0;
-}
-.formInfoNewRow input{
-    padding:8px 15px;
-}
-.formInfoNewRow select{
-    padding:8px 15px;
+.nrwTxt h4{
+    text-align: center;
+    font-weight:700;
+    font-size:20px;
+    line-height:20px;
+    color:#fff;
+    margin:0px 0px 15px;
 }
