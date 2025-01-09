@@ -11,6 +11,7 @@ import StreamIron from './steam_iron';
 import Spotting from './spotting';
 import Shoe from './shoe';
 import Alterations from './alterations';
+import OurServices from './our_services';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/spotting" element={<Spotting/>} />
           <Route path="/shoe" element={<Shoe/>} />
           <Route path="/alterations" element={<Alterations/>} />
+          <Route path="/our_services" element={<OurServices/>} />
         </Routes>
       </div>
     </Router>

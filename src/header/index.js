@@ -26,12 +26,12 @@ const Header = () => {
                 <NavLink  className="nav-link" to="/about">ABOUT US</NavLink>
               </li>
               <li className="nav-item  dropdown">
-                <a className="nav-link" href="">
+               <NavLink  className="nav-link" to="/our_services">
                   OUR SERVICES{" "}
                   <span>
                     <i className="fa fa-angle-down" aria-hidden="true"></i>
                   </span>
-                </a>
+                </NavLink>
                 <ul className="dropdown-menu">
                   <li>
                     <NavLink 
