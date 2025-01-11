@@ -75,4 +75,7 @@
     .logoInfoDataNew img {
         max-width: 100%;
     }
+    .bannerInfoData{
+       height: auto !important;
+    }
 }
