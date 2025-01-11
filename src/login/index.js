@@ -24,7 +24,7 @@ const Login = () => {
       console.log(response, "satyam")
       if (response.status === 200) {
         localStorage.setItem("authToken", response.data.token); // Save token
-        navigate("/dashboard"); // Redirect to dashboard
+        window.location.href = "/dashboard";// Redirect to dashboard
       } else {
         alert("Login failed: " + response.data.message);
       }

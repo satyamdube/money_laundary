@@ -14,6 +14,7 @@ import Alterations from './alterations';
 import OurServices from './our_services';
 import Login from "./login";
 import Dashboard from "./dashboard";
+import ContactGet from "./contact_get";
 
 function App() {
   const isAuthenticated = !!localStorage.getItem("authToken");
@@ -38,6 +39,7 @@ function App() {
           <Route path="/shoe" element={<Shoe/>} />
           <Route path="/alterations" element={<Alterations/>} />
           <Route path="/our_services" element={<OurServices/>} />
+          <Route path="/contact_list" element={<ContactGet/>} />
         </Routes>
       </div>
     </Router>

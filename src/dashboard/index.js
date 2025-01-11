@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from 'react-router-dom';
 import axios from "axios";  // Import axios
 import "./dashboard.css";
 
 const Dashboard = () => {
   const [data, setData] = useState([]);
-
   const handleLogout = () => {
     localStorage.removeItem("authToken"); // Clear authentication token
     window.location.href = "/"; // Redirect to login
@@ -26,14 +26,14 @@ const Dashboard = () => {
             <div className="logoData">
               <img src="./images/logoInfo.png" alt="Logo" />
             </div>
-            <button onClick={handleLogout}>Logout</button>
+            <div className="d-flex orderList"><NavLink className="loginData" to="/dashboard">Order List</NavLink> <NavLink className="loginData" to="/contact_list">Contact List</NavLink>  <button onClick={handleLogout}>Logout</button></div>
           </div>
         </div>
       </div>
       <div className="welcomeDashboard">
         <div className="container">
           <h2>Dashboard</h2>
-          <p>Welcome to the dashboard!</p>
+          <p>Welcome to the Order List!</p>
           <div className="tableDataOrderInfo">
             <table>
               <thead>
