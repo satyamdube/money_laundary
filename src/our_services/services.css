@@ -61,3 +61,16 @@
     margin: 0 auto;
     display: inline-block; 
 }
+@media screen and (max-width:767px) {
+    .perfectInfo{
+        width:100% !important;
+    }
+    .dataBoxInfo h3{
+        line-height: 44px !important;
+    }
+    .pricingBnr h2{
+        font-weight: 600;
+    font-size: 49px;
+    line-height: 58px;
+    }
+}

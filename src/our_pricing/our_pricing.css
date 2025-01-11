@@ -185,3 +185,30 @@
     margin:0px 0px 20px;
     font-weight:700;
 }
+@media screen and (max-width:767px) {
+    .perfectInfo{
+        width:100% !important;
+    }
+    .dataBoxInfo h3{
+        line-height: 44px !important;
+    }
+    .pricingBnr h2{
+        font-weight: 600;
+    font-size: 49px;
+    line-height: 58px;
+    }
+    .pricingBnr p{
+        line-height: 49px;
+    }
+    .cardPriceInfo{
+          display:inline-block;
+    }
+    .cardDataNew, .leftCardNew{
+        width: 100% !important;
+        display: inline-block;
+    }
+    .IndivusualInfo{
+        padding:0;
+        overflow:auto;
+    }
+}

@@ -120,3 +120,35 @@
     padding: 8px 27px !important;
     margin-top: 18px;
 }
+@media screen and (max-width:767px) {
+    .navbar-toggler{
+        color: #fff;
+        background: #fff;
+        padding: 0 2px;
+        margin: 5px;
+    }
+    .ml-auto.bookNow.pe-3 {
+        padding-right: 5px !important;
+    }
+    .header-top{
+        padding: 5px 0px;
+        background-color:#000;
+    }
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        position: absolute;
+        top:50px;
+        background: #000;
+        width: 100%;
+    }
+    .nav-item a{
+        padding: 8px 10px !important;
+        text-align: left;
+        margin: 5px 0px;
+    }
+    .dropdown-menu.show{
+        width:95%;
+    }
+}

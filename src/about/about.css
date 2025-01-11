@@ -180,3 +180,19 @@
     padding:0px 20px;
     box-sizing: border-box;
 }
+@media screen and (max-width:767px) {
+    .meetOwnerInfo{
+        display:inline-block;
+    }
+    .jaiSainInfoImg img{max-width:100%;}
+    .indivialCleaning img, .indivialCleaning.uv img{
+        max-width:100% !important;
+    }
+    .leftCbtText h2{
+        font-size:40px !important;
+        line-height: 68px !important;
+    }
+    .leftCbtText h2 br{
+        display:none;
+    }
+}

@@ -262,3 +262,8 @@
     color:#fff;
     font-style: italic;
 }
+@media screen and (max-width:767px) {
+    .how-it-works .flex-row .col-xs-12.col-sm-6.col-md-4.flex-item{
+        width:100%;
+    } 
+}
