@@ -1,0 +1,49 @@
+.loginPageOuter{
+    max-width: 400px;
+    margin: 0 auto;
+    padding:35px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height:380px;
+    margin: auto;
+}
+.loginPageOuter h2{
+    position: relative;
+    font-size:24px;
+    font-weight:600;
+    padding-bottom:30px;
+}
+.loginPageOuter h2:after {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 1px;
+    background: #000;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+}
+.loginPageOuter form label{
+    font-weight: 600;
+    display: block;
+    text-align: left;
+    margin: 15px 0px 6px;
+}
+.loginPageOuter form input{
+    padding:10px;
+    width:100%;
+    border:1px solid #ccc;
+    border-radius:3px;
+}
+.loginPageOuter button{
+    margin-top:20px;
+    background:#000;
+    color:#fff;
+    padding: 6px 20px;
+}

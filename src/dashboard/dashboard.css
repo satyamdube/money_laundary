@@ -1,0 +1,43 @@
+
+.dashboardOuter{
+    width:100%;
+    display:inline-block;
+}
+.dashboardHeader{
+    width:100%;
+    padding:0px 0px;
+    border-bottom:1px solid #fff;
+}
+.logoData img{
+    max-width:70px;
+}
+.welcomeDashboard {
+    width:100%;
+    display:inline-block;
+    padding:30px 0px;
+}
+.welcomeDashboard  h2{
+    font-size:20px;
+}
+.welcomeDashboard  h2, .welcomeDashboard  p{
+  color:#fff;
+  text-align:left;
+}
+.tableDataOrderInfo{
+    width:100%;
+    display:inline-block;
+    overflow:auto;
+    margin-top:20px;
+}
+.tableDataOrderInfo table{
+    width:100%;
+}
+.tableDataOrderInfo table tr th,
+.tableDataOrderInfo table tr td {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: left;
+}

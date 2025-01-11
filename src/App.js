@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import './App.css';
 import Home from './home';
 import About from './about';
@@ -12,13 +12,21 @@ import Spotting from './spotting';
 import Shoe from './shoe';
 import Alterations from './alterations';
 import OurServices from './our_services';
+import Login from "./login";
+import Dashboard from "./dashboard";
 
 function App() {
+  const isAuthenticated = !!localStorage.getItem("authToken");
   return (
     <Router>
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route
+            path="/dashboard"
+            element={isAuthenticated ? <Dashboard /> : <Navigate to="/login" />}
+          />
           <Route path="/about" element={<About />} />
           <Route path="/how_we_work" element={<HowWeWork />} />
           <Route path="/our_pricing" element={<OurPricing />} />
