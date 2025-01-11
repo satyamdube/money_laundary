@@ -69,6 +69,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding:50px 0px 80px;
+    border-top:1px solid #fff;
 }
 .centerMax{
     max-width:607px;
@@ -81,6 +82,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding:60px 0px;
+    border-top:1px solid #fff;
 }
 .customScenting h4{
     text-align:center;
