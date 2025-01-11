@@ -60,7 +60,7 @@ const About = () => {
 					<div><span className="washingLiner"></span></div>
 					<div className="cntInfoCus">
 						<div className="leftCbtText">
-							<h2>PICK <br/>YOUR <br/>SCENT</h2>
+							<h2>PICK <br/>YOUR SCENT</h2>
 							<p>"Good Smell is powerful. It speaks <br/>directly to our emotions, memories,<br/> and imagination."<br/> — Aristotle</p>
 						</div>
 						<div></div>
