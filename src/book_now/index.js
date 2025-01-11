@@ -11,7 +11,7 @@ const BookNow = () => {
     phone: "",
     pickupDate: "",
     pickupTime: "",
-    specialInstructions: "",
+    instruction: "",
   });
 
   const handleChange = (e) => {
@@ -47,7 +47,7 @@ const BookNow = () => {
           phone: "",
           pickupDate: "",
           pickupTime: "",
-          specialInstructions: "",
+          instruction: "",
         });
       } else {
         alert("Something went wrong. Please try again.");
@@ -173,7 +173,7 @@ const BookNow = () => {
               <div className="rowInput">
                 <textarea
                   name="specialInstructions"
-                  value={formData.specialInstructions}
+                  value={formData.instruction}
                   onChange={handleChange}
                   placeholder="Any repairs and alterations needed/ Stain details/ Damage Informations? Eg. Shorten Grey Reiss trouser by 3 Cm"
                 ></textarea>
