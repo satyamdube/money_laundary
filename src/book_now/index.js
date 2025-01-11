@@ -172,7 +172,7 @@ const BookNow = () => {
               <h4>Special Instruction</h4>
               <div className="rowInput">
                 <textarea
-                  name="specialInstructions"
+                  name="instruction"
                   value={formData.instruction}
                   onChange={handleChange}
                   placeholder="Any repairs and alterations needed/ Stain details/ Damage Informations? Eg. Shorten Grey Reiss trouser by 3 Cm"
