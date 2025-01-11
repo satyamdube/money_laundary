@@ -38,29 +38,29 @@ const Dashboard = () => {
             <table>
               <thead>
                 <tr>
-                  <th>order_id</th>
-                  <th>customer_id</th>
-                  <th>customer_name</th>
-                  <th>customer_email</th>
-                  <th>customer_phone</th>
-                  <th>customer_address</th>
-                  <th>order_pickup_date</th>
-                  <th>order_pickup_time</th>
-                  <th>order_instruction</th>
+                  {/* <th>order_id</th>
+                  <th>customer_id</th> */}
+                  <th>Order Date</th>
+                  <th>Order Time</th>
+                  <th>Customer Name</th>
+                  <th>Customer Addres</th>
+                  <th>Customer Email</th>
+                  <th>Customer Phone</th>
+                  <th>Customer Instruction</th>
                   <th>createddate</th>
                 </tr>
               </thead>
               <tbody>
                 {data.map((order, index) => (
                   <tr key={index}>
-                    <td>{order.order_id}</td>
-                    <td>{order.customer_id}</td>
-                    <td>{order.customer_name}</td>
-                    <td>{order.customer_email}</td>
-                    <td>{order.customer_phone}</td>
-                    <td>{order.customer_address}</td>
+                    {/* <td>{order.order_id}</td>
+                    <td>{order.customer_id}</td> */}
                     <td>{order.order_pickup_date}</td>
                     <td>{order.order_pickup_time}</td>
+                    <td>{order.customer_name}</td>
+                    <td>{order.customer_address}</td>
+                    <td>{order.customer_email}</td>
+                    <td>{order.customer_phone}</td>
                     <td>{order.order_instruction}</td>
                     <td>{order.createddate}</td>
                   </tr>
