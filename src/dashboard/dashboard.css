@@ -4,9 +4,13 @@
     display:inline-block;
 }
 .dashboardHeader{
-    width:100%;
-    padding:0px 0px;
-    border-bottom:1px solid #fff;
+    width: 100%;
+    padding: 0px 0px;
+    border-bottom: 1px solid #fff;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background: #000;
 }
 .logoData img{
     max-width:70px;
