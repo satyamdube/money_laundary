@@ -17,7 +17,7 @@ const Home = () => {
 				<div className="innerDataCard">
 					<p>WE MIGHT NOT BE ABLE TO WASH YOUR MONEY, BUT WE SURE CAN WASH YOUR CLOTHES LIKE ITS MONEY.</p>
 					<div className="moneyGIf">
-						<img src="./images/money.gif" alt="money"/>
+						<img src="./images/money_two.gif" alt="money"/>
 					</div>
 					<span className="linerData"></span>
 					<div className="bookInfo">
