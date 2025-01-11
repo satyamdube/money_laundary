@@ -1,91 +1,49 @@
-
-.meetOurFounder{
-    width:100%;
-    display:inline-block;
-}
-.headingInfo{
-    width:100%;
-    display:inline-block;
-    padding:40px 0px;
-    background:#000;
-}
-.headingInfo.get{
-    margin-top:40px;
-}
-.headingInfo h3{
-    font-weight:600;
-    font-size:17px;
-    line-height:25px;
-    text-align:center;
-    color:#fff;
-    position: relative;
-}
-.headingInfo.get h3:after{
-    content:'';
+.loginPageOuter{
+    max-width: 400px;
+    margin: 0 auto;
+    padding:35px;
+    background: #fff;
+    border-radius: 6px;
     position: absolute;
-    width:186px;
-    height:1px;
-    background:#FFFFFF;
-    margin:0 auto;
-    left:0;
-    right:0;
-    bottom:-12px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height:380px;
+    margin: auto;
 }
-.formDataNew{
-    max-width:700px;
-    margin:0px auto 18px;
-}
-.inputInfoDataForm{
-    width:100%;
-    display:inline-block;
-    margin-bottom:15px;
-}
-.inputInfoDataForm input{
-    padding:10px;
-    border:1px solid #fff;
-    color:#fff;
-    width:100%;
-    box-sizing: border-box;
-    outline:none;
-    background:#0000;
-}
-.inputInfoDataForm textarea{
-    padding:10px;
-    border:1px solid #fff;
-    color:#fff;
-    width:100%;
-    box-sizing: border-box;
-    outline:none;
-    background:#0000;
-    min-height:100px;
-    resize: none;
-}
-.inputInfoDataForm button{
-    padding:10px;
-    border:1px solid #fff;
-    color:#fff;
-    width:100%;
-    box-sizing: border-box;
-    outline:none;
-    background:#0000;
-    text-align: center;
-}
-.inputInfoDataForm p{
-    font-size:17px;
-    color:rgba(255, 255, 255, 1);
-    margin: 15px 0px 0px;
-}
-.socialLink{
-    width:100%;
-    display:inline-block;
-    padding:20px 0px;
-    text-align:center;
-    border-top:1px solid #fff;
-}
-.socialLink a  img{
-    max-width:160px;
-}
-.statusMessage p{
-    color:green;
+.loginPageOuter h2{
+    position: relative;
+    font-size:24px;
     font-weight:600;
+    padding-bottom:30px;
+}
+.loginPageOuter h2:after {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 1px;
+    background: #000;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+}
+.loginPageOuter form label{
+    font-weight: 600;
+    display: block;
+    text-align: left;
+    margin: 15px 0px 6px;
+}
+.loginPageOuter form input{
+    padding:10px;
+    width:100%;
+    border:1px solid #ccc;
+    border-radius:3px;
+}
+.loginPageOuter button{
+    margin-top:20px;
+    background:#000;
+    color:#fff;
+    padding: 6px 20px;
 }

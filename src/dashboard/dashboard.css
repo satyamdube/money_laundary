@@ -1,91 +1,43 @@
 
-.meetOurFounder{
+.dashboardOuter{
     width:100%;
     display:inline-block;
 }
-.headingInfo{
+.dashboardHeader{
+    width:100%;
+    padding:0px 0px;
+    border-bottom:1px solid #fff;
+}
+.logoData img{
+    max-width:70px;
+}
+.welcomeDashboard {
     width:100%;
     display:inline-block;
-    padding:40px 0px;
-    background:#000;
+    padding:30px 0px;
 }
-.headingInfo.get{
-    margin-top:40px;
+.welcomeDashboard  h2{
+    font-size:20px;
 }
-.headingInfo h3{
-    font-weight:600;
-    font-size:17px;
-    line-height:25px;
-    text-align:center;
-    color:#fff;
-    position: relative;
+.welcomeDashboard  h2, .welcomeDashboard  p{
+  color:#fff;
+  text-align:left;
 }
-.headingInfo.get h3:after{
-    content:'';
-    position: absolute;
-    width:186px;
-    height:1px;
-    background:#FFFFFF;
-    margin:0 auto;
-    left:0;
-    right:0;
-    bottom:-12px;
-}
-.formDataNew{
-    max-width:700px;
-    margin:0px auto 18px;
-}
-.inputInfoDataForm{
+.tableDataOrderInfo{
     width:100%;
     display:inline-block;
-    margin-bottom:15px;
+    overflow:auto;
+    margin-top:20px;
 }
-.inputInfoDataForm input{
-    padding:10px;
-    border:1px solid #fff;
-    color:#fff;
+.tableDataOrderInfo table{
     width:100%;
-    box-sizing: border-box;
-    outline:none;
-    background:#0000;
 }
-.inputInfoDataForm textarea{
-    padding:10px;
-    border:1px solid #fff;
-    color:#fff;
-    width:100%;
-    box-sizing: border-box;
-    outline:none;
-    background:#0000;
-    min-height:100px;
-    resize: none;
-}
-.inputInfoDataForm button{
-    padding:10px;
-    border:1px solid #fff;
-    color:#fff;
-    width:100%;
-    box-sizing: border-box;
-    outline:none;
-    background:#0000;
-    text-align: center;
-}
-.inputInfoDataForm p{
-    font-size:17px;
-    color:rgba(255, 255, 255, 1);
-    margin: 15px 0px 0px;
-}
-.socialLink{
-    width:100%;
-    display:inline-block;
-    padding:20px 0px;
-    text-align:center;
-    border-top:1px solid #fff;
-}
-.socialLink a  img{
-    max-width:160px;
-}
-.statusMessage p{
-    color:green;
-    font-weight:600;
+.tableDataOrderInfo table tr th,
+.tableDataOrderInfo table tr td {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: left;
 }
