@@ -4,7 +4,6 @@ import "./dashboard.css";
 
 const Dashboard = () => {
   const [data, setData] = useState([]);
-  console.log(data, "satyam");
 
   const handleLogout = () => {
     localStorage.removeItem("authToken"); // Clear authentication token
