@@ -85,3 +85,7 @@
 .socialLink a  img{
     max-width:160px;
 }
+.statusMessage p{
+    color:green;
+    font-weight:600;
+}
