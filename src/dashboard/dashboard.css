@@ -54,3 +54,20 @@
 .d-flex.orderList button{
     margin-left:20px;
 }
+
+.dateFilter{
+    width:100%;
+    display: inline-block;
+    text-align:right;
+}
+.dateFilter input{
+    padding:6px 10px;
+    border:1px solid #ccc;
+    margin-right:10px;
+    border-radius:3px;
+}
+.dateFilter button{
+    padding:6px 10px;
+    border:1px solid #ccc;
+    border-radius:3px;
+}

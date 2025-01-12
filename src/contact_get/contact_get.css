@@ -54,3 +54,29 @@
 .d-flex.orderList button{
     margin-left:20px;
 }
+.searchInput {
+    margin-bottom: 10px;
+    padding: 5px;
+    float: right;
+    margin-right: 10px;
+  }
+  
+  .dataTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .dataTable th, .dataTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .pagination span{
+    color:#fff;
+  }

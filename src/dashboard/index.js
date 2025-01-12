@@ -1,22 +1,75 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from 'react-router-dom';
-import axios from "axios";  // Import axios
+import axios from "axios";
+import { useTable, usePagination, useGlobalFilter } from 'react-table';
 import "./dashboard.css";
 
 const Dashboard = () => {
   const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+  const [startDate, setStartDate] = useState("");
+  const [endDate, setEndDate] = useState("");
+
   const handleLogout = () => {
-    localStorage.removeItem("authToken"); // Clear authentication token
-    window.location.href = "/"; // Redirect to login
+    localStorage.removeItem("authToken");
+    window.location.href = "/";
   };
 
   useEffect(() => {
-    // Fetch data using axios
     axios
       .get('https://dev.moneylaundry.wenidi.com/api/book_now/getOrders')
-      .then(response => setData(response.data.data)) // Store the data in state
-      .catch(error => console.error('Error fetching data:', error)); // Handle errors
+      .then(response => {
+        setData(response.data.data);
+        setFilteredData(response.data.data); // Set initial filtered data
+      })
+      .catch(error => console.error('Error fetching data:', error));
   }, []);
+
+  // Handle Date Range Filter
+  const handleDateFilter = () => {
+    if (startDate && endDate) {
+      const filtered = data.filter(order => {
+        const orderDate = new Date(order.order_pickup_date);
+        return orderDate >= new Date(startDate) && orderDate <= new Date(endDate);
+      });
+      setFilteredData(filtered);
+    } else {
+      setFilteredData(data); // Reset filter if dates are not set
+    }
+  };
+
+  // Define columns for the table
+  const columns = React.useMemo(
+    () => [
+      { Header: 'Order Date', accessor: 'order_pickup_date' },
+      { Header: 'Order Time', accessor: 'order_pickup_time' },
+      { Header: 'Customer Name', accessor: 'customer_name' },
+      { Header: 'Customer Address', accessor: 'customer_address' },
+      { Header: 'Customer Email', accessor: 'customer_email' },
+      { Header: 'Customer Phone', accessor: 'customer_phone' },
+      { Header: 'Customer Instruction', accessor: 'order_instruction' },
+      { Header: 'Created Date', accessor: 'createddate' },
+    ],
+    []
+  );
+
+  // UseTable hook for pagination and filtering
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    rows,
+    prepareRow,
+    page,
+    nextPage,
+    previousPage,
+    canNextPage,
+    canPreviousPage,
+    state: { pageIndex },
+  } = useTable(
+    { columns, data: filteredData, initialState: { pageSize: 5 } },
+    usePagination
+  );
 
   return (
     <div className="dashboardOuter">
@@ -26,7 +79,11 @@ const Dashboard = () => {
             <div className="logoData">
               <img src="./images/logoInfo.png" alt="Logo" />
             </div>
-            <div className="d-flex orderList"><NavLink className="loginData" to="/dashboard">Order List</NavLink> <NavLink className="loginData" to="/contact_list">Contact List</NavLink>  <button onClick={handleLogout}>Logout</button></div>
+            <div className="d-flex orderList">
+              <NavLink className="loginData" to="/dashboard">Order List</NavLink>
+              <NavLink className="loginData" to="/contact_list">Contact List</NavLink>
+              <button onClick={handleLogout}>Logout</button>
+            </div>
           </div>
         </div>
       </div>
@@ -34,39 +91,65 @@ const Dashboard = () => {
         <div className="container">
           <h2>Dashboard</h2>
           <p>Welcome to the Order List!</p>
+
+          {/* Date Range Filter */}
+          <div className="dateFilter">
+            <input
+              type="date"
+              value={startDate}
+              onChange={(e) => setStartDate(e.target.value)}
+              placeholder="Start Date"
+              className="dateInput"
+            />
+            <input
+              type="date"
+              value={endDate}
+              onChange={(e) => setEndDate(e.target.value)}
+              placeholder="End Date"
+              className="dateInput"
+            />
+            <button onClick={handleDateFilter} className="filterButton">
+              Apply Filter
+            </button>
+          </div>
+
           <div className="tableDataOrderInfo">
-            <table>
+            {/* Data Table */}
+            <table {...getTableProps()} className="dataTable">
               <thead>
-                <tr>
-                  {/* <th>order_id</th>
-                  <th>customer_id</th> */}
-                  <th>Order Date</th>
-                  <th>Order Time</th>
-                  <th>Customer Name</th>
-                  <th>Customer Addres</th>
-                  <th>Customer Email</th>
-                  <th>Customer Phone</th>
-                  <th>Customer Instruction</th>
-                  <th>createddate</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.map((order, index) => (
-                  <tr key={index}>
-                    {/* <td>{order.order_id}</td>
-                    <td>{order.customer_id}</td> */}
-                    <td>{order.order_pickup_date}</td>
-                    <td>{order.order_pickup_time}</td>
-                    <td>{order.customer_name}</td>
-                    <td>{order.customer_address}</td>
-                    <td>{order.customer_email}</td>
-                    <td>{order.customer_phone}</td>
-                    <td>{order.order_instruction}</td>
-                    <td>{order.createddate}</td>
+                {headerGroups.map(headerGroup => (
+                  <tr {...headerGroup.getHeaderGroupProps()}>
+                    {headerGroup.headers.map(column => (
+                      <th {...column.getHeaderProps()}>{column.render('Header')}</th>
+                    ))}
                   </tr>
                 ))}
+              </thead>
+              <tbody {...getTableBodyProps()}>
+                {page.map(row => {
+                  prepareRow(row);
+                  return (
+                    <tr {...row.getRowProps()}>
+                      {row.cells.map(cell => (
+                        <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                      ))}
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
+            {/* Pagination Controls */}
+            <div className="pagination">
+              <button onClick={() => previousPage()} disabled={!canPreviousPage}>
+                Previous
+              </button>
+              <span>
+                Page {pageIndex + 1}
+              </span>
+              <button onClick={() => nextPage()} disabled={!canNextPage}>
+                Next
+              </button>
+            </div>
           </div>
         </div>
       </div>
