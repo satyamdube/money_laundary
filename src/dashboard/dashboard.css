@@ -71,3 +71,15 @@
     border:1px solid #ccc;
     border-radius:3px;
 }
+@media screen and (max-width:767px) {
+    .d-flex.justify-contents-between.mt-5{
+        flex-wrap:wrap;
+    }
+    .searchFilter{
+        width:100%;
+    }
+    .dateFilter input, .searchFilter input, .dateFilter button{
+       width:100%;
+       margin:0px 0px 10px;
+    }
+}
