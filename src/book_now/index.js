@@ -95,15 +95,6 @@ const BookNow = () => {
           <form onSubmit={handleSubmit} className="formDataInnerInfo mb-4">
             <div className="innerCardInfo">
               <div className="rowInput">
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="Name*"
-                  required
-                />
-              </div>
               <div className="rowInput">
                 <input
                   type="email"
@@ -111,6 +102,15 @@ const BookNow = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email*"
+                  required
+                />
+              </div>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Name*"
                   required
                 />
               </div>
@@ -126,7 +126,7 @@ const BookNow = () => {
               </div>
               <div className="rowInput">
                 <input
-                  type="text"
+                  type="number"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
