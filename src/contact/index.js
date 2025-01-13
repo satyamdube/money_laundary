@@ -69,7 +69,7 @@ const Contact = () => {
         <div className="formDataNew">
         <div className="inputInfoDataForm">
             <input
-              type="text"
+              type="email"
               name="email"
               placeholder="EMAIL"
               value={formData.email}
@@ -87,7 +87,7 @@ const Contact = () => {
           </div>
           <div className="inputInfoDataForm">
             <input
-              type="text"
+              type="number"
               name="phone"
               placeholder="PHONE NUMBER"
               value={formData.phone}

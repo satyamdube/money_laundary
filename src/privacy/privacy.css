@@ -1,0 +1,66 @@
+.cleaningOuter{
+    width:100%;
+    display:inline-block;
+    background: url(../../public/images/washingService.gif) #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:60px 0px;
+    position: relative;
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cleaningOuter.shoe{
+    background: url(../../public/images/shoe.gif) #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100vh;
+    border-top:1px solid #fff;
+}
+.dataBoxInfo{
+    max-width: 783px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9;
+}
+.dataBoxInfo h3{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.dataBoxInfo h3:after {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 1px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+}
+.dataBoxInfo  p{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 44px;
+    color: #fff;
+    margin: 30px 0px 0px;
+}
+.perfectInfo{
+    margin-top:50px;
+    width:520px;
+    position:relative;
+    z-index:99;
+}
+.perfectInfo p{
+    font-weight:600;
+    font-size:20px;
+    line-height:50px;
+    margin:0px;
+    text-align:left;
+    color:#fff;
+}

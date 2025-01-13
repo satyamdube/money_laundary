@@ -48,7 +48,7 @@ const Dashboard = () => {
       { Header: 'Customer Email', accessor: 'customer_email' },
       { Header: 'Customer Phone', accessor: 'customer_phone' },
       { Header: 'Customer Instruction', accessor: 'order_instruction' },
-      { Header: 'Created Date', accessor: 'createddate' },
+      // { Header: 'Created Date', accessor: 'createddate' },
     ],
     []
   );
@@ -80,8 +80,8 @@ const Dashboard = () => {
               <img src="./images/logoInfo.png" alt="Logo" />
             </div>
             <div className="d-flex orderList">
-              <NavLink className="loginData" to="/dashboard">Order List</NavLink>
-              <NavLink className="loginData" to="/contact_list">Contact List</NavLink>
+              {/* <NavLink className="loginData" to="/dashboard">Order List</NavLink>
+              <NavLink className="loginData" to="/contact_list">Contact List</NavLink> */}
               <button onClick={handleLogout}>Logout</button>
             </div>
           </div>
