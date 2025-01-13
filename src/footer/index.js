@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './footer.css';
 const Footer = () => {
   return (
@@ -22,9 +23,9 @@ const Footer = () => {
 				<li><a target="_blank" href="" className="icon-facebook" title="Email"><i className="fa fa-envelope" aria-hidden="true"></i></a></li>
         <li><a target="_blank" href="" className="icon-facebook" title="Facebook"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>	
         </ul>
-				<div className="menu-footer-container"><ul id="footer-menu" className="menu"><li id="menu-item-181" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-181"><a href="">Terms &amp; Conditions</a></li>
+				<div className="menu-footer-container"><ul id="footer-menu" className="menu"><li id="menu-item-181" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-181"> <NavLink aria-current="page" to="/terms">Terms &amp; Conditions</NavLink></li>
         <li id="menu-item-182" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-182"><a>I</a></li>
-        <li id="menu-item-214" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-214"><a rel="privacy-policy" href="">Privacy Policy</a></li>
+        <li id="menu-item-214" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-214"><NavLink aria-current="page" to="/privacy"><a>Privacy Policy</a></NavLink></li>
         </ul></div>				<p>© 2025 Copyright. Money Laundry &amp; Dry Cleaning Services. All Righs Reserved.			</p>
               
 		</div>
