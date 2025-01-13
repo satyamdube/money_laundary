@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import axios from "axios";
-import { useTable, usePagination, useGlobalFilter } from 'react-table';
+import { useTable, usePagination } from "react-table";
 import "./dashboard.css";
 
 const Dashboard = () => {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
 
@@ -17,18 +18,18 @@ const Dashboard = () => {
 
   useEffect(() => {
     axios
-      .get('https://dev.moneylaundry.wenidi.com/api/book_now/getOrders')
-      .then(response => {
+      .get("https://dev.moneylaundry.wenidi.com/api/book_now/getOrders")
+      .then((response) => {
         setData(response.data.data);
         setFilteredData(response.data.data); // Set initial filtered data
       })
-      .catch(error => console.error('Error fetching data:', error));
+      .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   // Handle Date Range Filter
   const handleDateFilter = () => {
     if (startDate && endDate) {
-      const filtered = data.filter(order => {
+      const filtered = data.filter((order) => {
         const orderDate = new Date(order.order_pickup_date);
         return orderDate >= new Date(startDate) && orderDate <= new Date(endDate);
       });
@@ -38,17 +39,33 @@ const Dashboard = () => {
     }
   };
 
+  // Handle Search Filter
+  const handleSearch = (e) => {
+    const value = e.target.value.toLowerCase();
+    setSearchTerm(value);
+
+    const filtered = data.filter((order) =>
+      Object.values(order).some(
+        (val) => val && val.toString().toLowerCase().includes(value)
+      )
+    );
+    setFilteredData(filtered);
+  };
+
   // Define columns for the table
   const columns = React.useMemo(
     () => [
-      { Header: 'Order Date', accessor: 'order_pickup_date' },
-      { Header: 'Order Time', accessor: 'order_pickup_time' },
-      { Header: 'Customer Name', accessor: 'customer_name' },
-      { Header: 'Customer Address', accessor: 'customer_address' },
-      { Header: 'Customer Email', accessor: 'customer_email' },
-      { Header: 'Customer Phone', accessor: 'customer_phone' },
-      { Header: 'Customer Instruction', accessor: 'order_instruction' },
-      // { Header: 'Created Date', accessor: 'createddate' },
+      {
+        Header: "Order Date",
+        accessor: "order_pickup_date",
+        Cell: ({ value }) => new Date(value).toLocaleDateString(), // Format date
+      },
+      { Header: "Order Time", accessor: "order_pickup_time" },
+      { Header: "Customer Name", accessor: "customer_name" },
+      { Header: "Customer Address", accessor: "customer_address" },
+      { Header: "Customer Email", accessor: "customer_email" },
+      { Header: "Customer Phone", accessor: "customer_phone" },
+      { Header: "Customer Instruction", accessor: "order_instruction" },
     ],
     []
   );
@@ -80,8 +97,6 @@ const Dashboard = () => {
               <img src="./images/logoInfo.png" alt="Logo" />
             </div>
             <div className="d-flex orderList">
-              {/* <NavLink className="loginData" to="/dashboard">Order List</NavLink>
-              <NavLink className="loginData" to="/contact_list">Contact List</NavLink> */}
               <button onClick={handleLogout}>Logout</button>
             </div>
           </div>
@@ -93,6 +108,17 @@ const Dashboard = () => {
           <p>Welcome to the Order List!</p>
 
           {/* Date Range Filter */}
+          <div className="d-flex justify-contents-between mt-5">
+            {/* Search Filter */}
+          <div className="searchFilter">
+            <input
+              type="text"
+              value={searchTerm}
+              onChange={handleSearch}
+              placeholder="Search Orders"
+              className="searchInput"
+            />
+            </div>
           <div className="dateFilter">
             <input
               type="date"
@@ -112,40 +138,39 @@ const Dashboard = () => {
               Apply Filter
             </button>
           </div>
-
+          </div>
           <div className="tableDataOrderInfo">
             {/* Data Table */}
             <table {...getTableProps()} className="dataTable">
               <thead>
-                {headerGroups.map(headerGroup => (
+                {headerGroups.map((headerGroup) => (
                   <tr {...headerGroup.getHeaderGroupProps()}>
-                    {headerGroup.headers.map(column => (
-                      <th {...column.getHeaderProps()}>{column.render('Header')}</th>
+                    {headerGroup.headers.map((column) => (
+                      <th {...column.getHeaderProps()}>{column.render("Header")}</th>
                     ))}
                   </tr>
                 ))}
               </thead>
               <tbody {...getTableBodyProps()}>
-                {page.map(row => {
+                {page.map((row) => {
                   prepareRow(row);
                   return (
                     <tr {...row.getRowProps()}>
-                      {row.cells.map(cell => (
-                        <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                      {row.cells.map((cell) => (
+                        <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
                       ))}
                     </tr>
                   );
                 })}
               </tbody>
             </table>
+
             {/* Pagination Controls */}
             <div className="pagination">
               <button onClick={() => previousPage()} disabled={!canPreviousPage}>
                 Previous
               </button>
-              <span>
-                Page {pageIndex + 1}
-              </span>
+              <span>Page {pageIndex + 1}</span>
               <button onClick={() => nextPage()} disabled={!canNextPage}>
                 Next
               </button>
