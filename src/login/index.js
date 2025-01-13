@@ -29,7 +29,7 @@ const Login = () => {
         alert("Login failed: " + response.data.message);
       }
     } catch (error) {
-      alert("An error occurred during login. Please try again.");
+      alert("Incorrect Login Credential");
       console.error(error);
     } finally {
       setLoading(false);
@@ -41,7 +41,7 @@ const Login = () => {
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Username: </label>
+          <label>User Name: </label>
           <input
             type="text"
             value={username}

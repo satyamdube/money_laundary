@@ -86,7 +86,7 @@ const Header = () => {
           </div>
           <div className="ml-auto bookNow pe-3">
              <NavLink  to="/book_now"><img src="./images/bookNow.png" alt="Book Now"/></NavLink >
-             <NavLink className="loginData" to="/login">Login</NavLink>
+             {/* <NavLink className="loginData" to="/login">Login</NavLink> */}
           </div>
         </div>
       </nav>

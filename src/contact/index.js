@@ -67,6 +67,15 @@ const Contact = () => {
       </div>
       <div className="container">
         <div className="formDataNew">
+        <div className="inputInfoDataForm">
+            <input
+              type="text"
+              name="email"
+              placeholder="EMAIL"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
           <div className="inputInfoDataForm">
             <input
               type="text"
@@ -85,15 +94,7 @@ const Contact = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="inputInfoDataForm">
-            <input
-              type="text"
-              name="email"
-              placeholder="EMAIL"
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </div>
+          
           <div className="inputInfoDataForm">
             <textarea
               name="message"
