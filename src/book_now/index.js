@@ -14,19 +14,83 @@ const BookNow = () => {
     instruction: "",
   });
 
+  const [errors, setErrors] = useState({});
+  const [emailError, setEmailError] = useState("");
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+
+    setErrors((prev) => ({ ...prev, [name]: "" }));
+
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    // Name validation
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    } else if (!/[^A-Za-z]+$/.test(formData.name)) {
+      newErrors.name = "Name should contain only alphabets and max 50 characters";
+    }
+
+    // Email validation
+    if (!validateEmail(formData.email.trim())) {
+      newErrors.email = "Email is required";
+    } else if (formData.email.length > 30) {
+      newErrors.email = "Email should not exceed 50 characters";
+    } else if (!/^[\w-.]+@[\w-]+\.[a-z]{2,}$/i.test(formData.email)) {
+      newErrors.email = "Enter a valid email address";
+    }
+
+    // Phone validation
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+    } else if (!/^[0-9]{1,15}$/.test(formData.phone)) {
+      newErrors.phone = "Phone number should contain only numbers and max 12 digits";
+    }
+
+    // Address validation
+    if (!formData.address.trim()) {
+      newErrors.address = "Address is required";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleKeyDown = (event) => {
+    if (/[0-9]/.test(event.key)) {
+      event.preventDefault();  // Prevents numbers from being typed
+    }
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const handleBlur = () => {
+    if (formData.email && !validateEmail(formData.email)) {
+      setEmailError("Please enter a valid email.");
+    } else {
+      setEmailError(""); 
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validation (basic)
-    if (!formData.name || !formData.email || !formData.address || !formData.phone) {
-      alert("Please fill in all required fields.");
+    if (!validateForm()) {
       return;
     }
+
+    // Validation (basic)
+    // if (!formData.name || !formData.email || !formData.address || !formData.phone) {
+    //   alert("Please fill in all required fields.");
+    //   return;
+    // }
 
     // API call
     try {
@@ -49,6 +113,7 @@ const BookNow = () => {
           pickupTime: "",
           instruction: "",
         });
+        setErrors({});
       } else {
         alert("Something went wrong. Please try again.");
       }
@@ -102,8 +167,12 @@ const BookNow = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email*"
+                  maxLength={30}
+                  onBlur={handleBlur}
                   required
                 />
+                {emailError && <p className="error" style={{ color: "red" }}>{emailError}</p>}
+                 {errors.name && <span className="errorMessage"  style={{ color: "red" }}>{errors.email}</span>}
               </div>
                 <input
                   type="text"
@@ -111,8 +180,11 @@ const BookNow = () => {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Name*"
+                  maxLength={50}
+                  onKeyDown={handleKeyDown}
                   required
                 />
+                 {errors.name && <span className="errorMessage"  style={{ color: "red" }}>{errors.name}</span>}
               </div>
               <div className="rowInput">
                 <input
@@ -123,6 +195,7 @@ const BookNow = () => {
                   placeholder="Address*"
                   required
                 />
+                 {errors.address && <span className="errorMessage"  style={{ color: "red" }}>{errors.address}</span>}
               </div>
               <div className="rowInput">
                 <input
@@ -131,8 +204,12 @@ const BookNow = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Phone no*"
+                  onInput={(e) => {
+                    e.target.value = e.target.value.slice(0, 12); // Prevent users from entering more than 14 characters
+                  }}
                   required
                 />
+                {errors.phone && <span className="errorMessage"  style={{ color: "red" }}>{errors.phone}</span>}
               </div>
             </div>
             <br />
@@ -143,8 +220,8 @@ const BookNow = () => {
                 timing is convenient for you.
               </p>
             </div>
-            <div className="row">
-              <div className="col-sm-6">
+            <div className="row" style={{ justifyContent: "center"}}>
+              <div className="col-sm-4">
                 <div className="rowInput">
                   <input
                     type="date"
@@ -153,9 +230,10 @@ const BookNow = () => {
                     onChange={handleChange}
                     placeholder="Pick up date*"
                   />
+                  {errors.pickupDate && <span className="errorMessage"  style={{ color: "red" }}>{errors.pickupDate}</span>}
                 </div>
               </div>
-              <div className="col-sm-6">
+              <div className="col-sm-4">
                 <div className="rowInput">
                   <input
                     type="time"
@@ -164,6 +242,7 @@ const BookNow = () => {
                     onChange={handleChange}
                     placeholder="Pick up time*"
                   />
+                  {errors.pickupTime && <span className="errorMessage"  style={{ color: "red" }}>{errors.pickupTime}</span>}
                 </div>
               </div>
             </div>

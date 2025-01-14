@@ -88,3 +88,11 @@
     color:#fff;
     margin:0px 0px 15px;
 }
+.rowInput input::-webkit-outer-spin-button,
+.rowInput input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.rowInput input[type=number] {
+    -moz-appearance: textfield;
+  }

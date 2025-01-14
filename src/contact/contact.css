@@ -86,7 +86,7 @@
     max-width:160px;
 }
 .statusMessage p{
-    color:green;
+    /* color:#dc3545; */
     font-weight:600;
 }
 .inputInfoDataForm input::-webkit-outer-spin-button,
@@ -97,3 +97,11 @@
 .inputInfoDataForm input[type=number] {
     -moz-appearance: textfield;
   }
+
+  /* .success-message {
+    color: green;
+  }
+  
+  .error-message {
+    color: red;
+  } */
