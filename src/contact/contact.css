@@ -89,3 +89,11 @@
     color:green;
     font-weight:600;
 }
+.inputInfoDataForm input::-webkit-outer-spin-button,
+.inputInfoDataForm input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputInfoDataForm input[type=number] {
+    -moz-appearance: textfield;
+  }
