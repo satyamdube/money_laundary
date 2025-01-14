@@ -61,7 +61,7 @@ const BookNow = () => {
   };
 
   const handleKeyDown = (event) => {
-    if (/[0-9]/.test(event.key)) {
+    if (/[0-9,]/.test(event.key)) {
       event.preventDefault();  // Prevents numbers from being typed
     }
   };
