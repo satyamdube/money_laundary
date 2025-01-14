@@ -31,7 +31,7 @@ const BookNow = () => {
     // Name validation
     if (!formData.name.trim()) {
       newErrors.name = "Name is required";
-    } else if (!/[^A-Za-z]+$/.test(formData.name)) {
+    } else if (!/^[A-Za-z ]+$/.test(formData.name)) {
       newErrors.name = "Name should contain only alphabets and max 50 characters";
     }
 
