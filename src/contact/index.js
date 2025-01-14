@@ -74,6 +74,7 @@ const Contact = () => {
               placeholder="EMAIL"
               value={formData.email}
               onChange={handleChange}
+              maxLength="100"
             />
           </div>
           <div className="inputInfoDataForm">
@@ -92,6 +93,10 @@ const Contact = () => {
               placeholder="PHONE NUMBER"
               value={formData.phone}
               onChange={handleChange}
+              maxLength="14"
+              onInput={(e) => {
+                e.target.value = e.target.value.slice(0, 14); // Prevent users from entering more than 14 characters
+              }}
             />
           </div>
           
