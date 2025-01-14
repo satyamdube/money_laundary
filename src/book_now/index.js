@@ -229,6 +229,7 @@ const BookNow = () => {
                     value={formData.pickupDate}
                     onChange={handleChange}
                     placeholder="Pick up date*"
+                    min={new Date().toISOString().split("T")[0]}
                   />
                   {errors.pickupDate && <span className="errorMessage"  style={{ color: "red" }}>{errors.pickupDate}</span>}
                 </div>
