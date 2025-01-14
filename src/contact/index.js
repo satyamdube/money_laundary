@@ -74,7 +74,7 @@ const Contact = () => {
               placeholder="EMAIL"
               value={formData.email}
               onChange={handleChange}
-              maxLength="100"
+              maxLength="50"
             />
           </div>
           <div className="inputInfoDataForm">
