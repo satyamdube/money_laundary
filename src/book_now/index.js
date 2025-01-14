@@ -205,7 +205,7 @@ const BookNow = () => {
                   onChange={handleChange}
                   placeholder="Phone no*"
                   onInput={(e) => {
-                    e.target.value = e.target.value.slice(0, 12); // Prevent users from entering more than 14 characters
+                    e.target.value = e.target.value.slice(0, 10); // Prevent users from entering more than 14 characters
                   }}
                   required
                 />

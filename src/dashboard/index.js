@@ -84,7 +84,7 @@ const Dashboard = () => {
     canPreviousPage,
     state: { pageIndex },
   } = useTable(
-    { columns, data: filteredData, initialState: { pageSize: 5 } },
+    { columns, data: filteredData, initialState: { pageSize: 10 } },
     usePagination
   );
 

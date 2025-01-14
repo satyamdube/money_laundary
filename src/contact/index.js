@@ -122,9 +122,9 @@ const Contact = () => {
               placeholder="PHONE NUMBER"
               value={formData.phone}
               onChange={handleChange}
-              maxLength="12"
+              maxLength="10"
               onInput={(e) => {
-                e.target.value = e.target.value.slice(0, 12); // Prevent users from entering more than 14 characters
+                e.target.value = e.target.value.slice(0, 10); // Prevent users from entering more than 14 characters
               }}
             />
           </div>
