@@ -30,14 +30,17 @@ const Dashboard = () => {
   const handleDateFilter = () => {
     if (startDate && endDate) {
       const filtered = data.filter((order) => {
-        const orderDate = new Date(order.order_pickup_date);
-        return orderDate >= new Date(startDate) && orderDate <= new Date(endDate);
+        const orderDate = new Date(order.order_pickup_date).setHours(0, 0, 0, 0); // Normalize order date
+        const start = new Date(startDate).setHours(0, 0, 0, 0); // Normalize start date
+        const end = new Date(endDate).setHours(23, 59, 59, 999); // Include the entire end date
+        return orderDate >= start && orderDate <= end;
       });
       setFilteredData(filtered);
     } else {
       setFilteredData(data); // Reset filter if dates are not set
     }
   };
+  
 
   // Handle Search Filter
   const handleSearch = (e) => {
