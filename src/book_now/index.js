@@ -56,6 +56,15 @@ const BookNow = () => {
       newErrors.address = "Address is required";
     }
 
+    if (!formData.pickupDate) {
+      newErrors.pickupDate = "PickUp Date is required";
+    }
+
+    if (!formData.pickupTime) {
+      newErrors.pickupTime = "PickUp Time is required";
+    }
+    
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
