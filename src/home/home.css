@@ -13,7 +13,7 @@
 }
 .logoInfoDataNew img{
     max-width:600px;
-    margin-top:30px;
+    margin-top:77px;
 }
 .mightInfoData{
     width:100%;
@@ -75,7 +75,8 @@
 @media screen and (max-width:767px) {
     .logoInfoDataNew img {
         max-width: 100%;
-        margin:0px;
+        margin:150px;
+        border: "0";
     }
     .bannerInfoData{
        height: auto !important;
