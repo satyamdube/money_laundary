@@ -1,0 +1,22 @@
+.success-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #000; 
+    color: #fff;
+    text-align: center;
+  }
+  
+  .success-container h1{
+    font-weight: bold; 
+    margin: 5px 0; 
+  }
+.linerInform{
+    width: 504px;
+    height: 1px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    display: inline-block;
+}

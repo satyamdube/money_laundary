@@ -17,6 +17,7 @@ import Dashboard from "./dashboard";
 import ContactGet from "./contact_get";
 import Terms from "./terms";
 import Privacy from "./privacy";
+import SuccessPage from "./success";
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
           <Route path="/contact_list" element={<ContactGet/>} />
           <Route path="/terms" element={<Terms/>} />
           <Route path="/privacy" element={<Privacy/>} />
+          <Route path="/success" element={<SuccessPage />} />
         </Routes>
       </div>
     </Router>

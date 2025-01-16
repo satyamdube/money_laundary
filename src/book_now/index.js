@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./book_now.css";
 import Header from "../header";
 import Footer from "../footer";
+import { useNavigate } from "react-router-dom";
 
 const BookNow = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -112,7 +114,8 @@ const BookNow = () => {
       });
 
       if (response.ok) {
-        alert("Order created successfully. We will contact you shortly!");
+        navigate("/success");
+        // alert("Order created successfully. We will contact you shortly!");
         setFormData({
           name: "",
           email: "",
