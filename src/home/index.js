@@ -9,7 +9,7 @@ const Home = () => {
 		<Header/>
 		<div className="bannerInfoData">
 			<div className="logoInfoDataNew">
-				<img src="./images/logo3D.png" alt="logo banner"/>
+				<img src="./images/logo3D_new.png" alt="logo banner"/>
 			</div>
 		</div>
 		<div className="mightInfoData">
