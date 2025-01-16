@@ -32,42 +32,6 @@ const About = () => {
 			</div>
 			<div className="text-center bor"><p>Together, Jai and Ashish are committed to redefining fabric care in India, providing a transparent, efficient, and <br/>
 			world-class service experience.</p></div>
-			<div className="headingInfo">
-				<h3>WHY US?</h3>
-				<div className="indivialCleaning">
-					<h4>INDIVIDUAL CLEANING</h4>
-					<span className="linerInfo"></span>
-					<p> we prioritise hygiene. Each order is <br/> Processed individually, ensuring your <br/> clothes never mix with others.</p>
-					<div><span className="washingLiner"></span></div>
-					<img src="./images/washing.gif" alt="Washing machine"/>
-					<div><span className="washingLinerBottom"></span></div>
-				</div>
-			</div>
-			<div className="uvSter">
-				<div className="centerMax">
-					<div className="indivialCleaning uv">
-						<h4>UV Sterilization</h4>
-						<span className="linerInfo" style={{width:"234px"}}></span>
-						<p>After Being processed your clothes go <br/>through a UV light Sanitisation room, this <br/>process kills all the bacteria without the use <br/>of harmful chemicals.</p>
-						<img src="./images/uv.png" alt="Washing machine"/>
-					</div>
-				</div>
-			</div>
-			<div className="customScenting">
-				<div className="container">
-					<h4>CUSTOM SCENTING</h4>
-					<p>We Let you choose what you want your <br/> clothes to smell like.</p>
-					<div><span className="washingLiner"></span></div>
-					<div className="cntInfoCus">
-						<div className="leftCbtText">
-							<h2>PICK <br/>YOUR SCENT</h2>
-							<p>"Good Smell is powerful. It speaks <br/>directly to our emotions, memories,<br/> and imagination."<br/> — Aristotle</p>
-						</div>
-						<div></div>
-					</div>
-					<span className="linerInfo" style={{width:"234px"}}></span>
-				</div>
-			</div>
 		</div>
 		<Footer/>
     </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from 'react-router-dom';
 import "./book_now.css";
 import Header from "../header";
 import Footer from "../footer";
@@ -29,14 +30,14 @@ const BookNow = () => {
 
   const validateForm = () => {
     const newErrors = {};
-
+  
     // Name validation
     if (!formData.name.trim()) {
       newErrors.name = "Name is required";
     } else if (!/^[A-Za-z ]+$/.test(formData.name)) {
       newErrors.name = "Name should contain only alphabets and max 50 characters";
     }
-
+  
     // Email validation
     if (!validateEmail(formData.email.trim())) {
       newErrors.email = "Email is required";
@@ -45,31 +46,23 @@ const BookNow = () => {
     } else if (!/^[\w-.]+@[\w-]+\.[a-z]{2,}$/i.test(formData.email)) {
       newErrors.email = "Enter a valid email address";
     }
-
+  
     // Phone validation
     if (!formData.phone.trim()) {
       newErrors.phone = "Phone number is required";
     } else if (!/^[0-9]{1,15}$/.test(formData.phone)) {
       newErrors.phone = "Phone number should contain only numbers and max 12 digits";
     }
-
+  
     // Address validation
     if (!formData.address.trim()) {
       newErrors.address = "Address is required";
     }
-
-    // if (!formData.pickupDate) {
-    //   newErrors.pickupDate = "PickUp Date is required";
-    // }
-
-    // if (!formData.pickupTime) {
-    //   newErrors.pickupTime = "PickUp Time is required";
-    // }
-    
-
+  
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
+  
 
   const handleKeyDown = (event) => {
     if (/[0-9,]/.test(event.key)) {
@@ -158,7 +151,7 @@ const BookNow = () => {
             rounded up.
           </p>
           <p>
-            <span>.</span> View our full PRICE LIST to find out how much your order will be.
+            <span>.</span> View our full  <NavLink  className="nav-link" to="/our_pricing">PRICE LIST </NavLink> to find out how much your order will be.
           </p>
           <h3>WANT TO GET HOLD OF US?</h3>
           <p>

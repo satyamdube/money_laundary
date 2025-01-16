@@ -53,6 +53,13 @@
     outline:none;
     width:100%;
 }
+.topContentInfo p .nav-link{
+    display:inline;
+}
+.submit .btnIngo{
+    padding: 11px 38px;
+    box-shadow: 0px 25px 20px -20px rgb(213 213 213);
+}
 .rowInput textarea{
     padding:10px;
     background-color:#fff;

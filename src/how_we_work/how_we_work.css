@@ -93,11 +93,11 @@
     margin:0px 0px 40px;
 }
 .customScenting p{
-   font-weight:400;
-   color:#fff;
-   line-height:44px;
-   font-size:22px;
-   margin:0px 0px 30px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 0px 0px 30px;
 }
 .cntInfoCus {
     width:100%;
@@ -115,6 +115,7 @@
    color:#fff;
    line-height:106px;
    font-size:71px;
+   margin-top: -45px;
 }
 .carousel-dark .carousel-indicators [data-bs-target]{
     background-color: #014C56;
@@ -187,7 +188,6 @@
     width:100%;
     display:inline-block;
     background:#000;
-    padding: 0px 0 50px;
     position: relative;
 }
 .how-it-works .flex-row{
@@ -262,8 +262,15 @@
     color:#fff;
     font-style: italic;
 }
+.outerSectionIonfoData img{
+    max-width:100%;
+    border-top:1px solid #fff;
+}
 @media screen and (max-width:767px) {
     .how-it-works .flex-row .col-xs-12.col-sm-6.col-md-4.flex-item{
         width:100%;
     } 
+    .leftCbtText{
+        margin:0px;
+    }
 }

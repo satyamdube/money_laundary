@@ -22,7 +22,7 @@ const OurPricing = () => {
 			  </div>
 			  <div className="pricedataManin">
 				 <div className="container">
-					<div className="offerInfo" id="offer">
+					<div className="offerInfo">
 						<h3>Offers</h3>
 						<div className="cardPriceInfo">
 							<div className="cardDataNew">
@@ -78,7 +78,7 @@ const OurPricing = () => {
 								<p>OF 650 INR</p>
 								<p>If your garment is not listed below, please contact our customer service team for more information.</p>
 							</div>
-							<div className="IndivusualInfo">
+							<div className="IndivusualInfo" id="offer">
 								<h3>INDIVIDUAL GARMENTS</h3>
 								<p>( COST PER PIECE )</p>
 								<table>

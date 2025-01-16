@@ -167,7 +167,7 @@
     margin:70px 0px 70px;
 }
 .bookNowInfo img{
-    max-width:346px;
+    max-width:200px;
 }
 .tearmsCondition{
     width:100%;
@@ -175,7 +175,7 @@
 }
 .tearmsCondition p{
     font-weight:200;
-    font-size:18px;
+    font-size:14px;
     color:rgba(255, 255, 255, 1);
     text-align:left;
 }
