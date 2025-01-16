@@ -18,7 +18,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     axios
-      .get("https://dev.moneylaundry.wenidi.com/api/book_now/getOrders")
+      .get("https://dev.moneylaundry.wenidi.com/api/book_now/orders/today")
       .then((response) => {
         setData(response.data.data);
         setFilteredData(response.data.data); // Set initial filtered data
