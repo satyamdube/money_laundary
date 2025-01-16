@@ -18,9 +18,9 @@ const Footer = () => {
 	<div className="container">
 		<div className="site-info">
 		    <ul className="list-inline social-links">
-        <li><a target="_blank" href="" className="icon-instagram" title="Instagram"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>	
-        <li><a target="_blank" href="" className="icon-instagram" title="WhatsApp"><i className="fa fa-whatsapp" aria-hidden="true"></i></a></li>	
-				<li><a target="_blank" href="" className="icon-facebook" title="Email"><i className="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a target="_blank" href="https://www.instagram.com/themoneylaundry.in/" className="icon-instagram" title="Instagram"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>	
+        <li><a target="_blank" href="https://wa.me/9266612800" className="icon-instagram" title="WhatsApp"><i className="fa fa-whatsapp" aria-hidden="true"></i></a></li>	
+				<li><a target="_blank" href="mailto:contactus@themoneylaundry.in" className="icon-facebook" title="Email"><i className="fa fa-envelope" aria-hidden="true"></i></a></li>
         <li><a target="_blank" href="" className="icon-facebook" title="Facebook"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>	
         </ul>
 				<div className="menu-footer-container"><ul id="footer-menu" className="menu"><li id="menu-item-181" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-181"> <NavLink aria-current="page" to="/terms">Terms &amp; Conditions</NavLink></li>
