@@ -28,48 +28,48 @@ const OurPricing = () => {
 							<div className="cardDataNew">
 								<div className="leftCardNew">
 									<table>
-										<tr><td className="bgData">7%</td><td>₹ 749/-</td></tr>
+										<tr><td className="bgData">7%</td><td>749  INR</td></tr>
 									</table>
 								</div>
 								<div className="leftCardNew">
 									<table>
-										<tr><td colSpan={"2"}>2 Suits Deal (trouser or skirt + jacket)<p>(Usual Price ₹ 799/-)</p></td></tr>
-									</table>
-								</div>
-							</div>
-							<div className="cardDataNew">
-								<div className="leftCardNew">
-									<table>
-										<tr><td className="bgData">13%</td><td>₹ 699/-</td></tr>
-									</table>
-								</div>
-								<div className="leftCardNew">
-									<table>
-										<tr><td colSpan={"2"}>10 Shirts Deal (men's, hanging)<p>(Usual Price ₹ 790/-)</p></td></tr>
+										<tr><td colSpan={"2"}>2 Suits Deal (trouser or skirt + jacket)<p>(Usual Price 799 INR)</p></td></tr>
 									</table>
 								</div>
 							</div>
 							<div className="cardDataNew">
 								<div className="leftCardNew">
 									<table>
-										<tr><td className="bgData">13%</td><td>₹ 349/-</td></tr>
+										<tr><td className="bgData">13%</td><td>699 INR</td></tr>
 									</table>
 								</div>
 								<div className="leftCardNew">
 									<table>
-										<tr><td colSpan={"2"}>5 Shirts Deal (men's, hanging)<p>(Usual Price ₹ 395/-)</p></td></tr>
+										<tr><td colSpan={"2"}>10 Shirts Deal (men's, hanging)<p>(Usual Price 790 INR)</p></td></tr>
 									</table>
 								</div>
 							</div>
 							<div className="cardDataNew">
 								<div className="leftCardNew">
 									<table>
-										<tr><td className="bgData">13%</td><td>₹ 699/-</td></tr>
+										<tr><td className="bgData">13%</td><td>349 INR</td></tr>
 									</table>
 								</div>
 								<div className="leftCardNew">
 									<table>
-										<tr><td colSpan={"2"}>10 Blouse Deal (Women's hanging)<p>(Usual Price ₹ 790/-)</p></td></tr>
+										<tr><td colSpan={"2"}>5 Shirts Deal (men's, hanging)<p>(Usual Price 395 INR)</p></td></tr>
+									</table>
+								</div>
+							</div>
+							<div className="cardDataNew">
+								<div className="leftCardNew">
+									<table>
+										<tr><td className="bgData">13%</td><td>699 INR</td></tr>
+									</table>
+								</div>
+								<div className="leftCardNew">
+									<table>
+										<tr><td colSpan={"2"}>10 Blouse Deal (Women's hanging)<p>(Usual Price 790 INR)</p></td></tr>
 									</table>
 								</div>
 							</div>
@@ -88,139 +88,139 @@ const OurPricing = () => {
 									</tr>
 									<tr>
 										<td>Shirt</td>
-										<td>₹ 79/-</td>
+										<td>79 INR</td>
 									</tr>
 									<tr>
 										<td>White Shirt</td>
-										<td>₹ 99/-</td>
+										<td>99 INR</td>
 									</tr>
 									<tr>
 										<td>T-Shirt/Undershirt/Pajama/Half Pants</td>
-										<td>₹ 49/-</td>
+										<td>49 INR</td>
 									</tr>
 									<tr>
 										<td>Jeans/Trousers/Pants</td>
-										<td>₹ 99/-</td>
+										<td>99 INR</td>
 									</tr>
 									<tr>
 										<td>Suite 2 piece*</td>
-										<td>₹ 399/-</td>
+										<td>399 INR</td>
 									</tr>
 									<tr>
 										<td>Suite 3 piece*</td>
-										<td>₹ 549/-</td>
+										<td>549 INR</td>
 									</tr>
 									<tr>
 										<td>WaistCoat*</td>
-										<td>₹ 249/-</td>
+										<td>249 INR</td>
 									</tr>
 									<tr>
 										<td>Dinner Jacket</td>
-										<td>₹ 449/-</td>
+										<td>449 INR</td>
 									</tr>
 									<tr>
 										<td>Dinner Suite(2 pc)</td>
-										<td>₹ 599/-</td>
+										<td>599 INR</td>
 									</tr>
 									<tr>
 										<td>Safari Set</td>
-										<td>₹ 349/-</td>
+										<td>349 INR</td>
 									</tr>
 									<tr>
 										<td>Leather Jacket*</td>
-										<td>₹ 549/-</td>
+										<td>549 INR</td>
 									</tr>
 									<tr>
 										<td>Gilet</td>
-										<td>₹ 399/-</td>
+										<td>399 INR</td>
 									</tr>
 									<tr>
 										<td>Puffer jacket</td>
-										<td>₹ 349/-</td>
+										<td>349 INR</td>
 									</tr>
 									<tr>
 										<td>Jacket</td>
-										<td>₹ 299/-</td>
+										<td>299 INR</td>
 									</tr>
 									<tr>
 										<td>Jumper</td>
-										<td>₹ 249/-</td>
+										<td>249 INR</td>
 									</tr>
 									<tr>
 										<td>Short coat</td>
-										<td>₹ 449/-</td>
+										<td>449 INR</td>
 									</tr>
 									<tr>
 										<td>Long Coat</td>
-										<td>₹ 649/-</td>
+										<td>649 INR</td>
 									</tr>
 									<tr>
 										<td>Kurta Pajama</td>
-										<td>₹ 199/-</td>
+										<td>199 INR</td>
 									</tr>
 									<tr>
 										<td>Tie</td>
-										<td>₹ 99/-</td>
+										<td>99 INR</td>
 									</tr>
 									<tr>
 										<td>Sweatshirts/Sweatpants/Hoodie</td>
-										<td>₹ 199/-</td>
+										<td>199 INR</td>
 									</tr>
 									<tr>
 										<td>Design Blouse/Choli</td>
-										<td>₹ 199/-</td>
+										<td>199 INR</td>
 									</tr>
 									<tr>
 										<td>Saree/Ghagra, Sherwani Plain</td>
-										<td>₹ 499/-</td>
+										<td>499 INR</td>
 									</tr>
 									<tr>
 										<td>Saree Design, Silk Saree Design </td>
-										<td>₹ 699/-</td>
+										<td>699 INR</td>
 									</tr>
 									<tr>
 										<td>Ghagra Design, Sherwani Design</td>
-										<td>₹ 699/-</td>
+										<td>699 INR</td>
 									</tr>
 									<tr>
 										<td>Dress(plain)</td>
-										<td>₹ 399/-</td>
+										<td>399 INR</td>
 									</tr>
 									<tr>
 										<td>Dress Design</td>
-										<td>₹ 549/-</td>
+										<td>549 INR</td>
 									</tr>
 									<tr>
 										<td>Designer Gown/Designer Lehenga</td>
-										<td>₹ 699/-</td>
+										<td>699 INR</td>
 									</tr>
 									<tr>
 										<td>Jumpsuit</td>
-										<td>₹ 399/-</td>
+										<td>399 INR</td>
 									</tr>
 									<tr>
 										<td>Bikini/Swimming costumes</td>
-										<td>₹ 99/-</td>
+										<td>99 INR</td>
 									</tr>
 									<tr>
 										<td>Salwar, Skirt, Legging</td>
-										<td>₹ 79/-</td>
+										<td>79 INR</td>
 									</tr>
 									<tr>
 										<td>Kurti, Top, Kameez</td>
-										<td>₹ 99/-</td>
+										<td>99 INR</td>
 									</tr>
 									<tr>
 										<td>Designer Dupatta, Scarf, Shawl</td>
-										<td>₹ 449/-</td>
+										<td>449 INR</td>
 									</tr>
 									<tr>
 										<td>Dupatta, Scarf, Shawl</td>
-										<td>₹ 249/-</td>
+										<td>249 INR</td>
 									</tr>
 									<tr>
 										<td>Patiala Blouse/Choli Plain</td>
-										<td>₹ 79/-</td>
+										<td>79 INR</td>
 									</tr>
 								</table>
 							</div>
@@ -230,27 +230,27 @@ const OurPricing = () => {
 								<table>
 									<tr>
 										<td>2 Suits Deal(trouser + skirt + jacket)</td>
-										<td>₹ 749/-</td>
+										<td>749 INR</td>
 									</tr>
 									<tr>
 										<td>10 Shirts Deal (men's hanging)</td>
-										<td>₹ 699/-</td>
+										<td>699 INR</td>
 									</tr>
 									<tr>
 										<td>5 Shirts Deal (men's hanging)</td>
-										<td>₹ 349/-</td>
+										<td>349 INR</td>
 									</tr>
 									<tr>
 										<td>10 Blouses Deal (hanging)</td>
-										<td>₹ 699/-</td>
+										<td>699 INR</td>
 									</tr>
 									<tr>
 										<td>5 Blouses Deal (hanging)</td>
-										<td>₹ 349/-</td>
+										<td>349 INR</td>
 									</tr>
 									<tr>
 										<td>5 Design Blouses Deal (hanging)</td>
-										<td>₹ 699/-</td>
+										<td>699 INR</td>
 									</tr>
 								</table>
 							</div>
@@ -260,15 +260,15 @@ const OurPricing = () => {
 								<table>
 									<tr>
 										<td>Sneakers</td>
-										<td>₹ 299/-</td>
+										<td>299 INR</td>
 									</tr>
 									<tr>
 										<td>Sneaker Designer</td>
-										<td>₹ 449/-</td>
+										<td>449 INR</td>
 									</tr>
 									<tr>
 										<td>Leather Shoes</td>
-										<td>₹ 449/-</td>
+										<td>449 INR</td>
 									</tr>
 									
 								</table>
