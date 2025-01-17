@@ -94,6 +94,21 @@
     color:#fff;
     margin:0px 0px 15px;
 }
+.rowInputAddress{
+    width:100%;
+    display:inline-block;
+    margin-bottom:15px;
+}
+.rowInputAddress input {
+    line-height: 23px;
+    min-height: 120px;
+    outline: none;
+    padding: 27px 10px 10px;
+    resize: none;
+    text-align: left;
+    width: 100%;
+
+}
 .rowInput input::-webkit-outer-spin-button,
 .rowInput input::-webkit-inner-spin-button {
   -webkit-appearance: none;

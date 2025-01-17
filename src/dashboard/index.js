@@ -66,7 +66,9 @@ const Dashboard = () => {
       {
         Header: "Order Pickup Date",
         accessor: "order_pickup_date",
-        Cell: ({ value }) => new Date(value).toLocaleDateString(), // Format date
+        Cell: ({ value }) => {
+          return value ? new Date(value).toLocaleDateString() : "";
+        },
       },
       { Header: "Order Pickup Time", accessor: "order_pickup_time" },
       { Header: "Customer Name", accessor: "customer_name" },
