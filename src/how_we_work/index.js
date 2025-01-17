@@ -7,8 +7,8 @@ const HowWeWork = () => {
     <div>
 		<Header/>
 		<div className="meetOurFounder">
-			<div className="headingInfo">
-				<h3>HOW WE WORK</h3>
+			<div className="headingInfoworks">
+				<h3>HOW IT WORKS?</h3>
 			</div>
 			<div className="outerSectionIonfoData">
 		        <img src="./images/howItWork.jpg" alt="How it work"/>

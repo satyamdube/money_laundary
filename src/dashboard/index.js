@@ -35,7 +35,7 @@ const Dashboard = () => {
   const handleDateFilter = () => {
     if (startDate && endDate) {
       const filtered = data.filter((order) => {
-        const orderDate = new Date(order.order_pickup_date).setHours(0, 0, 0, 0); // Normalize order date
+        const orderDate = new Date(order.createddate).setHours(0, 0, 0, 0); // Normalize order date
         const start = new Date(startDate).setHours(0, 0, 0, 0); // Normalize start date
         const end = new Date(endDate).setHours(23, 59, 59, 999); // Include the entire end date
         return orderDate >= start && orderDate <= end;
@@ -128,7 +128,6 @@ const Dashboard = () => {
             />
             </div>
           <div className="dateFilter">
-            kdjksdj
             <input
               type="date"
               value={startDate}
