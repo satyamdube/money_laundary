@@ -273,6 +273,10 @@
     .leftCbtText{
         margin:0px;
     }
+    .customScenting{
+        background-size: 100%;
+        background-position: bottom;
+    }
 }
 
 .headingInfoworks{

@@ -81,5 +81,10 @@
     }
     .bannerInfoData{
        height: auto !important;
+       background:none;
+    }
+    .indivialCleaning{
+        padding: 0px 30px;
+        box-sizing: border-box;
     }
 }
