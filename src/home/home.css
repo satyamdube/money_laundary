@@ -87,4 +87,7 @@
         padding: 0px 30px;
         box-sizing: border-box;
     }
+    .linerInfo {
+        display: none !important;
+    }
 }
