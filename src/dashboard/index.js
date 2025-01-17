@@ -20,8 +20,13 @@ const Dashboard = () => {
     axios
       .get("https://dev.moneylaundry.wenidi.com/api/book_now/orders/today")
       .then((response) => {
-        setData(response.data.data);
-        setFilteredData(response.data.data); // Set initial filtered data
+        if(Array.isArray(response.data.data[0])) {
+          console.log(response);
+          setData(response.data.data[0]);
+          setFilteredData(response.data.data[0]); // Set initial filtered data
+        } else {
+          console.error("API response data is not an array:", response.data.data[0]);
+        }
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
@@ -59,11 +64,11 @@ const Dashboard = () => {
   const columns = React.useMemo(
     () => [
       {
-        Header: "Order Date",
+        Header: "Order Pickup Date",
         accessor: "order_pickup_date",
         Cell: ({ value }) => new Date(value).toLocaleDateString(), // Format date
       },
-      { Header: "Order Time", accessor: "order_pickup_time" },
+      { Header: "Order Pickup Time", accessor: "order_pickup_time" },
       { Header: "Customer Name", accessor: "customer_name" },
       { Header: "Customer Address", accessor: "customer_address" },
       { Header: "Customer Email", accessor: "customer_email" },
@@ -87,7 +92,7 @@ const Dashboard = () => {
     canPreviousPage,
     state: { pageIndex },
   } = useTable(
-    { columns, data: filteredData, initialState: { pageSize: 10 } },
+    { columns, data: filteredData || [], initialState: { pageSize: 10 } },
     usePagination
   );
 

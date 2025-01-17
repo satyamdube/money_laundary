@@ -15,6 +15,7 @@ const BookNow = () => {
     pickupDate: "",
     pickupTime: "",
     instruction: "",
+    id: null
   });
 
   const [errors, setErrors] = useState({});
@@ -75,11 +76,40 @@ const BookNow = () => {
     return emailRegex.test(email);
   };
 
-  const handleBlur = () => {
+  const handleBlur = async () => {
     if (formData.email && !validateEmail(formData.email)) {
       setEmailError("Please enter a valid email.");
     } else {
       setEmailError(""); 
+    }
+
+    try {
+      const response = await fetch(`https://dev.moneylaundry.wenidi.com/api/book_now/checkCustomerEmail`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+      },
+        body: JSON.stringify({ email: formData.email }),
+      });
+      
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data);
+        console.log("name", data.customer.name);
+        if (data) {
+          setFormData((prev) => ({
+            ...prev,
+            id: data.customer.id || null,
+            name: data.customer.name || "",
+            address: data.customer.address || "",
+            phone: data.customer.phone || "",
+          }));
+        }
+      } else {
+        console.error("Failed to fetch user data");
+      }
+    } catch (error) {
+      console.error("Error fetching user data:", error);
     }
   };
 
@@ -117,6 +147,7 @@ const BookNow = () => {
           pickupDate: "",
           pickupTime: "",
           instruction: "",
+          id: null
         });
         setErrors({});
       } else {
