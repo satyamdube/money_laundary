@@ -102,3 +102,11 @@
 .rowInput input[type=number] {
     -moz-appearance: textfield;
   }
+  @media screen and (max-width:767px) {
+    .noteData{
+        padding:0px;
+    }
+    .innerCardInfo{
+        max-width:100%;
+    }
+  }
