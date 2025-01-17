@@ -278,8 +278,8 @@ const OurPricing = () => {
 					<div className="bookNowInfo"> <NavLink  to="/book_now"><img alt="Book Now" src="./images/bookNow.png"/></NavLink></div>
 					<div className="tearmsCondition">
 						<h4>Terms & Conditions:-</h4>
-						<p>-Minimum Order Value: -A minimum order of ₹650 is required for all services. </p>
-						<p>-White Garment Surcharge: -An additional charge of ₹20 per white garment applies for specialized care and treatment.</p>
+						<p>-Minimum Order Value: -A minimum order of 650 INR is required for all services. </p>
+						<p>-White Garment Surcharge: -An additional charge of 20 INR per white garment applies for specialized care and treatment.</p>
 						<p> -GST Applicable: -All listed prices are exclusive of 18% GST, which will be added to the final bill.</p>
 					</div>
 				 </div>

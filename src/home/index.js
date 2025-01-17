@@ -26,6 +26,12 @@ const Home = () => {
 				</div>
 			</div>
 		</div>
+		<div className="howItWork">
+		<div className="headingInfo">
+				<h3>HOW IT WORKS ?</h3>
+			</div>
+		    <img src="./images/howItWork.jpg" alt="How it work"/>
+		</div>
 		<div className="howItWork"></div>
 		<div className="meetOurFounder">
 			<div className="headingInfo">
@@ -53,12 +59,6 @@ const Home = () => {
 			</div>
 			<div className="text-center bor"><p>Together, Jai and Ashish are committed to redefining fabric care in India, providing a transparent, efficient, and <br/>
 			world-class service experience.</p></div>
-		</div>
-		<div className="howItWork">
-		<div className="headingInfo">
-				<h3>HOW IT WORKS ?</h3>
-			</div>
-		    <img src="./images/howItWork.jpg" alt="How it work"/>
 		</div>
 		<div className="headingInfo">
 				<h3>WHY US?</h3>
