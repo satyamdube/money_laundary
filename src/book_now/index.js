@@ -159,8 +159,7 @@ const BookNow = () => {
             contactus@themoneylaundry.in
           </p>
         </div>
-        <span className="washingLinerBottom mt-5 mb-5"></span>
-        <br />
+        <span className="washingLinerBottom mt-3 mb-3"></span>
         <div className="container">
           <form onSubmit={handleSubmit} className="formDataInnerInfo mb-4">
             <div className="innerCardInfo">
@@ -217,8 +216,7 @@ const BookNow = () => {
                 {errors.phone && <span className="errorMessage"  style={{ color: "red" }}>{errors.phone}</span>}
               </div>
             </div>
-            <br />
-            <div className="mt-5 mb-5 noteData">
+            <div className="mt-3 mb-3 noteData">
               <p>
                 Note: <br /> If you do not select a specific pickup time and date, we will schedule your pickup at our
                 standard time after confirming the details with you. Rest assured, our team will reach out to ensure the
@@ -252,7 +250,6 @@ const BookNow = () => {
                 </div>
               </div>
             </div>
-            <br />
             <div className="innerCardInfo mt-5 nrwTxt">
               <h4>Special Instruction</h4>
               <div className="rowInput">

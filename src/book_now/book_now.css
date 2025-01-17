@@ -16,7 +16,7 @@
   font-size:14px;
   line-height:14px;
   color:rgba(255, 255, 255, 1);
-  margin:50px 0px 30px;
+  margin:20px 0px 20px;
 }
 .topContentInfo h3{
     font-weight:700;
@@ -61,17 +61,16 @@
     box-shadow: 0px 25px 20px -20px rgb(213 213 213);
 }
 .rowInput textarea{
-    padding:10px;
-    background-color:#fff;
-    outline:none;
-    width:100%;
-    resize:none;
-    min-height:190px;
-    font-weight:400;
-    letter-spacing:2px;
-    line-height:23px;
-    padding-top: 43px;
+    background-color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 23px;
+    min-height: 157px;
+    outline: none;
+    padding: 27px 10px 10px;
+    resize: none;
     text-align: left;
+    width: 100%;
 }
 .noteData{
     width:100%;
