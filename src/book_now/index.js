@@ -221,7 +221,7 @@ const BookNow = () => {
                 />
                  {errors.name && <span className="errorMessage"  style={{ color: "red" }}>{errors.name}</span>}
               </div>
-              <div className="rowInput">
+              <div className="rowInputAddress">
                 <input
                   type="text"
                   name="address"
