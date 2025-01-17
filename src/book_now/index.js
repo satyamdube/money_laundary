@@ -222,14 +222,20 @@ const BookNow = () => {
                  {errors.name && <span className="errorMessage"  style={{ color: "red" }}>{errors.name}</span>}
               </div>
               <div className="rowInputAddress">
-                <input
+                <textarea 
+                  name="address"
+                  value={formData.address}
+                  onChange={handleChange}
+                  placeholder="Address*"
+                  required></textarea>
+                {/* <input
                   type="text"
                   name="address"
                   value={formData.address}
                   onChange={handleChange}
                   placeholder="Address*"
                   required
-                />
+                /> */}
                  {errors.address && <span className="errorMessage"  style={{ color: "red" }}>{errors.address}</span>}
               </div>
               <div className="rowInput">
