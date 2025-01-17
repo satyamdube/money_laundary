@@ -83,3 +83,10 @@
        margin:0px 0px 10px;
     }
 }
+.searchFilterInput input {
+    margin-bottom: 10px;
+    padding: 5px;
+    float: left;
+    margin-right: 10px;
+    width: 415px;
+}

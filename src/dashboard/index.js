@@ -118,16 +118,17 @@ const Dashboard = () => {
           {/* Date Range Filter */}
           <div className="d-flex justify-contents-between mt-5">
             {/* Search Filter */}
-          <div className="searchFilter">
+          <div className="searchFilterInput">
             <input
               type="text"
               value={searchTerm}
               onChange={handleSearch}
-              placeholder="Search Orders"
+              placeholder="Search Orders By Name, Address, Email, Phone"
               className="searchInput"
             />
             </div>
           <div className="dateFilter">
+            kdjksdj
             <input
               type="date"
               value={startDate}
