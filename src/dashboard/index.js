@@ -20,8 +20,13 @@ const Dashboard = () => {
     axios
       .get("https://dev.moneylaundry.wenidi.com/api/book_now/orders/today")
       .then((response) => {
-        setData(response.data.data);
-        setFilteredData(response.data.data); // Set initial filtered data
+        if(Array.isArray(response.data.data[0])) {
+          console.log(response);
+          setData(response.data.data[0]);
+          setFilteredData(response.data.data[0]); // Set initial filtered data
+        } else {
+          console.error("API response data is not an array:", response.data.data[0]);
+        }
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
@@ -30,7 +35,7 @@ const Dashboard = () => {
   const handleDateFilter = () => {
     if (startDate && endDate) {
       const filtered = data.filter((order) => {
-        const orderDate = new Date(order.order_pickup_date).setHours(0, 0, 0, 0); // Normalize order date
+        const orderDate = new Date(order.createddate).setHours(0, 0, 0, 0); // Normalize order date
         const start = new Date(startDate).setHours(0, 0, 0, 0); // Normalize start date
         const end = new Date(endDate).setHours(23, 59, 59, 999); // Include the entire end date
         return orderDate >= start && orderDate <= end;
@@ -59,11 +64,11 @@ const Dashboard = () => {
   const columns = React.useMemo(
     () => [
       {
-        Header: "Order Date",
+        Header: "Order Pickup Date",
         accessor: "order_pickup_date",
         Cell: ({ value }) => new Date(value).toLocaleDateString(), // Format date
       },
-      { Header: "Order Time", accessor: "order_pickup_time" },
+      { Header: "Order Pickup Time", accessor: "order_pickup_time" },
       { Header: "Customer Name", accessor: "customer_name" },
       { Header: "Customer Address", accessor: "customer_address" },
       { Header: "Customer Email", accessor: "customer_email" },
@@ -87,7 +92,7 @@ const Dashboard = () => {
     canPreviousPage,
     state: { pageIndex },
   } = useTable(
-    { columns, data: filteredData, initialState: { pageSize: 10 } },
+    { columns, data: filteredData || [], initialState: { pageSize: 10 } },
     usePagination
   );
 
@@ -113,12 +118,12 @@ const Dashboard = () => {
           {/* Date Range Filter */}
           <div className="d-flex justify-contents-between mt-5">
             {/* Search Filter */}
-          <div className="searchFilter">
+          <div className="searchFilterInput">
             <input
               type="text"
               value={searchTerm}
               onChange={handleSearch}
-              placeholder="Search Orders"
+              placeholder="Search Orders By Name, Address, Email, Phone"
               className="searchInput"
             />
             </div>
