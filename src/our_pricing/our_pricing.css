@@ -194,11 +194,13 @@
     }
     .pricingBnr h2{
         font-weight: 600;
-    font-size: 49px;
-    line-height: 58px;
+    font-size: 32px;
+    margin:0;
+    line-height:40px;
     }
     .pricingBnr p{
         line-height: 49px;
+        font-size:22px;
     }
     .cardPriceInfo{
           display:inline-block;
