@@ -182,7 +182,7 @@ const BookNow = () => {
             rounded up.
           </p>
           <p>
-            <span>.</span> View our full  <NavLink  className="nav-link" to="/our_pricing">PRICE LIST </NavLink> to find out how much your order will be.
+            <span>.</span> View our full  <u><NavLink  className="nav-link" to="/our_pricing">PRICE LIST </NavLink> </u> to find out how much your order will be.
           </p>
           <h3>WANT TO GET HOLD OF US?</h3>
           <p>

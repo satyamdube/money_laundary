@@ -11,7 +11,7 @@ const SuccessPage = () => {
     <div>
         <Header />
         <div className="success-container">
-      <h1>THANKYOU FOR YOUR ORDER, OUR TEAM WILL</h1><br />
+      <h1>THANK YOU FOR YOUR ORDER, OUR TEAM WILL</h1><br />
       <h1>GET IN TOUCH SHORTLY.</h1>
       <span className="linerInform"></span>
       </div>
