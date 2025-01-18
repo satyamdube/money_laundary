@@ -8,10 +8,10 @@ const Terms = () => {
 		<Header/>
         <div className="mt-5">
             <div className="container">
-                <div className="dataBoxInfo">
+                <div className="databoxInfo">
                     <h3>Terms and Conditions</h3>
-                    <p>Published on 28th June 2021 This is as Agreement Between you or the entity that you represent (hereinafter “You” or “Your”) and Money Laundry PVT.</p>
-                    <div><span className="washingLiner"></span></div>
+                    {/* <p>Published on 28th June 2021 This is as Agreement Between you or the entity that you represent (hereinafter “You” or “Your”) The Money Laundry</p> */}
+                    {/* <div><span className="washingLiner"></span></div> */}
                 </div>
                 <div className="perfectInfoFooter mb-5">
                 <div className="row featurette">

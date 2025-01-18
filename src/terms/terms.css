@@ -18,13 +18,13 @@
     min-height:100vh;
     border-top:1px solid #fff;
 }
-.dataBoxInfo{
+.databoxInfo{
     max-width: 783px;
     margin: 0 auto;
     position: relative;
     z-index: 9;
 }
-.dataBoxInfo h3{
+.databoxInfo h3{
     font-weight: 600;
     font-size: 30px;
     line-height: 30px;
@@ -32,10 +32,10 @@
     color: #fff;
     position: relative;
 }
-.dataBoxInfo h3:after {
+.databoxInfo h3:after {
     content: '';
     position: absolute;
-    width: 75px;
+    width: 340px;
     height: 1px;
     background: #FFFFFF;
     margin: 0 auto;
