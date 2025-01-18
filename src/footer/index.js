@@ -13,7 +13,7 @@ const Footer = () => {
         </a>
       </span>
       <span className="cc-calto-action-ripple">
-        <a href="tel:96964 00007"><i className="fa fa-phone" alt="Call +91 96964 00007"></i></a><span className="num"></span>
+        <a href="tel:96964 00007"><img src="./images/callIcon.png" alt="call"/></a><span className="num"></span>
       </span>
 	<div className="container">
 		<div className="site-info">
