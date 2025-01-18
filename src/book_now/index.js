@@ -20,7 +20,7 @@ const BookNow = () => {
 
   const [errors, setErrors] = useState({});
   const [emailError, setEmailError] = useState("");
-
+  const [isTermsAccepted, setIsTermsAccepted] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -28,7 +28,9 @@ const BookNow = () => {
     setErrors((prev) => ({ ...prev, [name]: "" }));
 
   };
-
+  const handleCheckboxChange = (e) => {
+    setIsTermsAccepted(e.target.checked);
+  };
   const validateForm = () => {
     const newErrors = {};
   
@@ -119,7 +121,10 @@ const BookNow = () => {
     if (!validateForm()) {
       return;
     }
-
+    if (!isTermsAccepted) {
+      alert("You must accept the terms and conditions to proceed.");
+      return;
+    }
     // Validation (basic)
     // if (!formData.name || !formData.email || !formData.address || !formData.phone) {
     //   alert("Please fill in all required fields.");
@@ -297,9 +302,23 @@ const BookNow = () => {
                   placeholder="Any repairs and alterations needed/ Stain details/ Damage Informations? Eg. Shorten Grey Reiss trouser by 3 Cm"
                 ></textarea>
               </div>
+              <div className="termsData mb-4">
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={isTermsAccepted}
+                    onChange={handleCheckboxChange}
+                  />{" "}
+                  I have read and accept the{" "}
+                  <NavLink style={{ display: "inline" }} aria-current="page" to="/terms">
+                    terms and conditions
+                  </NavLink>.
+                </label>
+              </div>
             </div>
+           
             <div className="submit">
-              <button type="submit" className="btnIngo">
+              <button type="submit" className="btnIngo" disabled={!isTermsAccepted}>
                 Submit
               </button>
             </div>
