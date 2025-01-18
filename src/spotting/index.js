@@ -8,7 +8,7 @@ const Spotting = () => {
 		<Header/>
 		<div className="cleaningOuter spotting">
             <div className="container">
-                <div className="dataBoxInfo">
+                <div className="dataBoxInfoSpotting">
                     <h3>PRE AND POST SPOTTING</h3>
                     <p>We go beyond cleaning with meticulous pre and post-<br/>spotting care, treating every stain based on its type and <br/>fabric. Our expertise ensures flawless results while <br/>preserving the integrity of your garments</p>
                     <div><span className="washingLiner"></span></div>

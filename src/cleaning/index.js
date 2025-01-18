@@ -8,10 +8,10 @@ const Cleaning = () => {
 		<Header/>
 		<div className="cleaningOuter">
             <div className="container">
-                <div className="dataBoxInfo">
+                <div className="dataBoxInfoClean">
                     <h3>CLEANING</h3>
                     <p>Our cleaning process uses fabric-specific, eco-friendly <br/>chemicals tailored to the unique thread count and <br/>material of each garment. Whether it’s delicate silks, fine <br/>wools, or everyday wear, we ensure impeccable <br/>cleanliness while preserving the integrity and longevity <br/>of your clothes.</p>
-                    <div><span className="cleaningLiner"></span></div>
+                    <div><span className="cleaningLinerService"></span></div>
                 </div>
             </div>
         </div>

@@ -18,13 +18,13 @@
     min-height:100vh;
     border-top:1px solid #fff;
 }
-.dataBoxInfo{
+.dataBoxInfoShoe{
     max-width: 783px;
     margin: 0 auto;
     position: relative;
     z-index: 9;
 }
-.dataBoxInfo h3{
+.dataBoxInfoShoe h3{
     font-weight: 600;
     font-size: 30px;
     line-height: 30px;
@@ -32,10 +32,10 @@
     color: #fff;
     position: relative;
 }
-.dataBoxInfo h3:after {
+.dataBoxInfoShoe h3:after {
     content: '';
     position: absolute;
-    width: 75px;
+    width: 230px;
     height: 1px;
     background: #FFFFFF;
     margin: 0 auto;
@@ -43,7 +43,7 @@
     right: 0;
     bottom: -12px;
 }
-.dataBoxInfo  p{
+.dataBoxInfoShoe  p{
     font-weight: 400;
     font-size: 22px;
     line-height: 44px;
