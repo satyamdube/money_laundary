@@ -51,9 +51,14 @@
     width:100%;
     display:inline-block;
     margin-top:30px;
+    min-height:64px;
 }
 .downArrow img{
-    max-width:38px;
+    margin-top: 3px;
+    max-width: 38px;
+    animation: jumpInfinite 1.5s infinite;
+    position: absolute;
+    margin-left: -20px;
 }
 .pricedataManin{
     width:100%;
@@ -214,3 +219,15 @@
         overflow:auto;
     }
 }
+
+@keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }

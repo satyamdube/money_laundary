@@ -15,7 +15,7 @@ const OurPricing = () => {
 						<p>SAVE 25% ON YOUR FIRST ORDER WITH CODE TML25X</p>
 						<div className="browswPrices">
 							<a href="#offer">Browse our prices</a>
-							<div className="downArrow"><img src="./images/downArrow.png"/></div>
+							<div className="downArrow"><a href="#offer" style={{padding:0,margin:0}}><img src="./images/downArrow.png"/></a></div>
 						</div>
 					</div>
 			  </div>
