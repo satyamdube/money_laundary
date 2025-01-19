@@ -173,6 +173,9 @@
 .indivialCleaning.uv img{
     max-width:327px;
 }
+.indivialCleaning.uv img{
+    opacity:0.3;
+}
 .pd-l{
     width:100%;
     display:inline-block;

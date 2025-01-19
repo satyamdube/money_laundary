@@ -73,6 +73,9 @@
 .howItWork .headingInfo{
  padding:15px 0 10px;
 }
+.indivialCleaning.uv img{
+    opacity:0.3;
+}
 @media screen and (max-width:767px) {
     .logoInfoDataNew img {
         max-width: 100%;
@@ -89,5 +92,13 @@
     }
     .linerInfo {
         display: none !important;
+    }
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .howItWork img{
+        width:100% !important;
     }
 }

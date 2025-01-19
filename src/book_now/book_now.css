@@ -136,3 +136,20 @@
         max-width:100%;
     }
   }
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .noteData{
+        padding:0px !important;
+    }
+    .innerCardInfo{
+        max-width:100% !important;
+    }
+    .formDataInnerInfo .col-sm-4{
+        width:100%;
+    }
+    .howItWork img{
+        width:100% !important;
+    }
+}
