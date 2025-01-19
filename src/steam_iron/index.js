@@ -8,7 +8,7 @@ const StreamIron = () => {
 		<Header/>
         <div className="cleaningOuter streamInfo">
             <div className="container">
-                <div className="dataBoxInfo">
+                <div className="dataBoxInfoSteam">
                     <h3>STEAM IRON</h3>
                     <p>Every garment is expertly steamed, leaving <br/>it impeccably crease-free and Every garment <br/>is delivered hung, ready to wear. </p>
                     <div><span className="steamLiner"></span></div>
