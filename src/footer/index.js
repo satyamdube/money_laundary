@@ -19,7 +19,7 @@ const Footer = () => {
 		<div className="site-info">
 		    <ul className="list-inline social-links">
         <li><a target="_blank" href="https://www.instagram.com/themoneylaundry.in/" className="icon-instagram" title="Instagram"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>	
-        <li><a target="_blank" href="https://wa.me/+91 92666 12700" className="icon-instagram" title="WhatsApp"><i className="fa fa-whatsapp" aria-hidden="true"></i></a></li>	
+        <li><a target="_blank" href="https://wa.me/+919266612700" className="icon-instagram" title="WhatsApp"><i className="fa fa-whatsapp" aria-hidden="true"></i></a></li>	
 				<li><a target="_blank" href="mailto:contactus@themoneylaundry.in" className="icon-facebook" title="Email"><i className="fa fa-envelope" aria-hidden="true"></i></a></li>
         <li><a target="_blank" href="" className="icon-facebook" title="Facebook"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>	
         </ul>
