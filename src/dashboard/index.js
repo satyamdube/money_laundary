@@ -10,6 +10,7 @@ const Dashboard = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleLogout = () => {
     localStorage.removeItem("authToken");
@@ -32,17 +33,43 @@ const Dashboard = () => {
   }, []);
 
   // Handle Date Range Filter
-  const handleDateFilter = () => {
-    if (startDate && endDate) {
-      const filtered = data.filter((order) => {
-        const orderDate = new Date(order.createddate).setHours(0, 0, 0, 0); // Normalize order date
-        const start = new Date(startDate).setHours(0, 0, 0, 0); // Normalize start date
-        const end = new Date(endDate).setHours(23, 59, 59, 999); // Include the entire end date
-        return orderDate >= start && orderDate <= end;
+  const handleDateFilter = async () => {
+
+    if (!startDate || !endDate) {
+      alert("Please select both start and end dates");
+      return;
+    }
+
+    if (startDate > endDate) {
+      alert("Start date cannot be later than end date.");
+      return;
+    }
+
+    try {
+      setLoading(true);
+      const response = await axios.post("https://dev.moneylaundry.wenidi.com/api/book_now/orders/filterbyDate", {
+          startDate,
+          endDate,
       });
-      setFilteredData(filtered);
-    } else {
-      setFilteredData(data); // Reset filter if dates are not set
+      console.log(response.data.message);
+      if (response.data.message && response.data.message === "No Records Found") {
+        setFilteredData([]);
+        alert("No Records Found for the selected date range.");
+      }else if(Array.isArray(response.data.orders[0])) {
+        setFilteredData(response.data.orders[0]);
+      } else {
+        console.error("API response data is not an array:", response.data.data);
+        alert("Unexpected response format from the server.");
+      }
+    } catch (error) {
+      if (error.response) {
+        alert(`Error: ${error.response.data.message || 'Something went wrong.'}`);
+      } else {
+      console.error("Error fetching data:", error);
+      alert("Failed to fetch data. Please try again.");
+      }
+    } finally {
+      setLoading(false);
     }
   };
   
