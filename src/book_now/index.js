@@ -21,6 +21,7 @@ const BookNow = () => {
   const [errors, setErrors] = useState({});
   const [emailError, setEmailError] = useState("");
   const [isTermsAccepted, setIsTermsAccepted] = useState(false);
+  const [time, setTime] = useState("");
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -113,6 +114,38 @@ const BookNow = () => {
     } catch (error) {
       console.error("Error fetching user data:", error);
     }
+  };
+
+  const handleTimeChange = (e) => {
+    let value = e.target.value;
+
+    value = value.replace(/[^0-9:APMapm\s]/g, "");
+
+    if (value.length === 2 && !value.includes(":")) {
+      value = value + ":";
+    }
+
+    // if (value.length >= 5 && !value.includes("AM") && !value.includes("PM")) {
+    //   value = value + " AM"; 
+    // }
+
+    const amPmMatch = value.match(/\b(AM|PM)\b/i);
+    if (amPmMatch) {
+      const rest = value.replace(/\b(AM|PM)\b/i, "").trim(); 
+      value = `${rest} ${amPmMatch[0].toUpperCase()}`.trim(); 
+    }
+
+    if (value.length > 10) {
+      value = value.substring(0, 10);
+    }
+
+
+    setTime(value);
+
+    setFormData((prevState) => ({
+      ...prevState,
+      pickupTime: value, 
+    }));
   };
 
   const handleSubmit = async (e) => {
@@ -282,10 +315,10 @@ const BookNow = () => {
               <div className="col-sm-4">
                 <div className="rowInput">
                   <input
-                    type="time"
+                    type="text"
                     name="pickupTime"
-                    value={formData.pickupTime}
-                    onChange={handleChange}
+                    value={time}
+                    onChange={handleTimeChange}
                     placeholder="Pick up time*"
                   />
                   {errors.pickupTime && <span className="errorMessage"  style={{ color: "red" }}>{errors.pickupTime}</span>}
