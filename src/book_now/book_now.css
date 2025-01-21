@@ -135,6 +135,10 @@
     .innerCardInfo{
         max-width:100%;
     }
+    .rowInput label{
+        width:100%;
+        text-align:left;
+    }
   }
   @media only screen 
   and (min-device-width: 375px) 
