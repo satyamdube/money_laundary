@@ -4,6 +4,8 @@ import "./book_now.css";
 import Header from "../header";
 import Footer from "../footer";
 import { useNavigate } from "react-router-dom";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const BookNow = () => {
   const navigate = useNavigate();
@@ -23,6 +25,7 @@ const BookNow = () => {
   const [isTermsAccepted, setIsTermsAccepted] = useState(false);
   const [time, setTime] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [startDate, setStartDate] = useState(new Date());
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -284,17 +287,27 @@ const BookNow = () => {
             </div>
             <div className="row" style={{ justifyContent: "center"}}>
               <div className="col-sm-4">
-                <div className="rowInput">
-                  <label style={{ color:"white" }}>Pickup Date</label>
-                  <input
-                    type="date"
-                    name="pickupDate"
-                    value={formData.pickupDate}
-                    onChange={handleChange}
-                    placeholder="Pick up date*"
-                    min={new Date().toISOString().split("T")[0]}
+              <div className="rowInput">
+                  <label style={{ color: "white" }}>Pickup Date</label>
+                  <DatePicker
+                    selected={startDate}
+                    onChange={(date) => {
+                      setStartDate(date);
+                      setFormData((prev) => ({
+                        ...prev,
+                        pickupDate: date.toISOString().split("T")[0], // Format to YYYY-MM-DD if needed for the backend
+                      }));
+                    }}
+                    minDate={new Date()} // Prevent selecting past dates
+                    dateFormat="MMMM d, yyyy" // Customize the date format
+                    className="custom-datepicker" // Optional custom class for styling
+                    placeholderText="Select a date" // Placeholder text
                   />
-                  {errors.pickupDate && <span className="errorMessage"  style={{ color: "red" }}>{errors.pickupDate}</span>}
+                  {errors.pickupDate && (
+                    <span className="errorMessage" style={{ color: "red" }}>
+                      {errors.pickupDate}
+                    </span>
+                  )}
                 </div>
               </div>
               <div className="col-sm-4">
