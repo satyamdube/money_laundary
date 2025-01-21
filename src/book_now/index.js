@@ -22,6 +22,8 @@ const BookNow = () => {
   const [emailError, setEmailError] = useState("");
   const [isTermsAccepted, setIsTermsAccepted] = useState(false);
   const [time, setTime] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -31,6 +33,9 @@ const BookNow = () => {
   };
   const handleCheckboxChange = (e) => {
     setIsTermsAccepted(e.target.checked);
+    if (e.target.checked) {
+      setErrorMessage(""); 
+    }
   };
   const validateForm = () => {
     const newErrors = {};
@@ -155,7 +160,7 @@ const BookNow = () => {
       return;
     }
     if (!isTermsAccepted) {
-      alert("You must accept the terms and conditions to proceed.");
+      setErrorMessage("You must accept the terms and conditions to proceed.");
       return;
     }
     // Validation (basic)
@@ -205,30 +210,9 @@ const BookNow = () => {
             <img src="./images/whiteLogo.png" alt="Washing machine" />
           </div>
           <span className="linerInfo"></span>
-          <h2>JUST A REMINDER...</h2>
-          <h3>ITEMS</h3>
-          <p>
-            <span>.</span> No need to list your items, just place them in a bag clearly labelled with your name and
-            drop off at your building reception or we can come collect it.
-          </p>
-          <p>
-            <span>.</span> Our expert team checks them after collection and sends you an email including prices.
-          </p>
-          <h3>PRICES</h3>
-          <p>
-            <span>.</span> The minimum order value is 650/- INR. If you place an order for less than 650/- it will be
-            rounded up.
-          </p>
-          <p>
-            <span>.</span> View our full  <u><NavLink  className="nav-link" to="/our_pricing">Price List </NavLink> </u> to find out how much your order will be.
-          </p>
-          <h3>WANT TO GET HOLD OF US?</h3>
-          <p>
-            <span>.</span> If you have any questions at all, you can contact us at +91 92666 12700 or
-            contactus@themoneylaundry.in
-          </p>
+          
         </div>
-        <span className="washingLinerBottom mt-3 mb-3"></span>
+        
         <div className="container">
           <form onSubmit={handleSubmit} className="formDataInnerInfo mb-4">
             <div className="innerCardInfo">
@@ -301,6 +285,7 @@ const BookNow = () => {
             <div className="row" style={{ justifyContent: "center"}}>
               <div className="col-sm-4">
                 <div className="rowInput">
+                  <label style={{ color:"white" }}>Pickup Date</label>
                   <input
                     type="date"
                     name="pickupDate"
@@ -314,6 +299,7 @@ const BookNow = () => {
               </div>
               <div className="col-sm-4">
                 <div className="rowInput">
+                <label style={{ color:"white" }}>Pickup Time</label>
                   <input
                     type="text"
                     name="pickupTime"
@@ -348,15 +334,45 @@ const BookNow = () => {
                   </NavLink>.
                 </label>
               </div>
+              {errorMessage && (
+        <p style={{ color: "red", fontSize: "14px", marginBottom: "10px" }}>
+          {errorMessage}
+        </p>
+      )}
             </div>
            
             <div className="submit">
-              <button type="submit" className="btnIngo" disabled={!isTermsAccepted}>
+              <button type="submit" className="btnIngo" >
                 Submit
               </button>
             </div>
           </form>
         </div>
+        <span className="washingLinerBottom mt-3 mb-3"></span>
+        <div className="topContentInfo">
+        <h2>JUST A REMINDER...</h2>
+          <h3>ITEMS</h3>
+          <p>
+            <span>.</span> No need to list your items, just place them in a bag clearly labelled with your name and
+            drop off at your building reception or we can come collect it.
+          </p>
+          <p>
+            <span>.</span> Our expert team checks them after collection and sends you an email including prices.
+          </p>
+          <h3>PRICES</h3>
+          <p>
+            <span>.</span> The minimum order value is 650/- INR. If you place an order for less than 650/- it will be
+            rounded up.
+          </p>
+          <p>
+            <span>.</span> View our full  <u><NavLink  className="nav-link" to="/our_pricing">Price List </NavLink> </u> to find out how much your order will be.
+          </p>
+          <h3>WANT TO GET HOLD OF US?</h3>
+          <p>
+            <span>.</span> If you have any questions at all, you can contact us at +91 92666 12700 or
+            contactus@themoneylaundry.in
+          </p>
+          </div>
       </div>
       <Footer />
     </div>
