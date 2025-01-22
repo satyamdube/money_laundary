@@ -295,7 +295,7 @@ const BookNow = () => {
                       setStartDate(date);
                       setFormData((prev) => ({
                         ...prev,
-                        pickupDate: date ? date.toISOString().split("T")[0] : "", // Handle null selection
+                        pickupDate: date ? date.toLocaleDateString("en-CA") : "", // Handle null selection
                       }));
                     }}
                     minDate={new Date()} // Prevent selecting past dates
