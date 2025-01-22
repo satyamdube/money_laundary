@@ -25,7 +25,7 @@ const BookNow = () => {
   const [isTermsAccepted, setIsTermsAccepted] = useState(false);
   const [time, setTime] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const [startDate, setStartDate] = useState(new Date());
+  const [startDate, setStartDate] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -290,12 +290,12 @@ const BookNow = () => {
               <div className="rowInput">
                   <label style={{ color: "white" }}>Pickup Date</label>
                   <DatePicker
-                    selected={startDate}
+                    selected={startDate} // Ensure startDate is initially null or undefined
                     onChange={(date) => {
                       setStartDate(date);
                       setFormData((prev) => ({
                         ...prev,
-                        pickupDate: date.toISOString().split("T")[0], // Format to YYYY-MM-DD if needed for the backend
+                        pickupDate: date ? date.toISOString().split("T")[0] : "", // Handle null selection
                       }));
                     }}
                     minDate={new Date()} // Prevent selecting past dates
