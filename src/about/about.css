@@ -31,8 +31,10 @@
 .infoDataMeet{
     width:100%;
     display:inline-block;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.9780287114845938) 0%, rgba(0,0,0,0.3925945378151261) 48%, rgba(0,0,0,1) 100%);
+    background: url(../../public/images/seperate/img1.png);
+    /* background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.9780287114845938) 0%, rgba(0,0,0,0.3925945378151261) 48%, rgba(0,0,0,1) 100%); */
+    
 }
 .meetOwnerInfo{
     width:100%;

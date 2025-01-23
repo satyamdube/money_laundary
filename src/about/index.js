@@ -19,7 +19,7 @@ const About = () => {
 							<p>Jai Saini Went for his MBA to London and began his career in finance. During his time in the UK, Jai experienced the seamless laundry services typical in Western countries. Upon returning to India, he was struck by the stark contrast—customers here often face unclear pricing, misleading service distinctions, and frustratingly long delivery times.Determined to elevate the industry, Jai co-founded The Money Laundry to bring Western-standard efficiency and transparency to Indian laundry services. Under his leadership, the company guarantees fast turnarounds, often delivering within 24-36 hours, while maintaining clear and honest communication with every customer.</p>
 						</div>
 						<div className="jaiSainInfoImg">
-							<img src="./images/owner.png" alt="Owner"/>
+							<img src="./images/seperate/owner4.png" alt="Owner"/>
 						</div>
 						<div className="ashisInfo">
 							<p><b>Ashish Chaubey,</b></p>
