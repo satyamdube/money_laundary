@@ -24,7 +24,7 @@ const About = () => {
 								</div>
 								<div className="ashisInfo">
 									<p><b>Ashish Chaubey,</b></p>
-									<p>Co-Founder/Ceo</p>
+									<p>Co-Founder/Coo</p>
 									<p>Ashish Chaubey brings extensive expertise from the pharmaceutical industry, where he specialised in chemical safety and innovation. Disturbed by the use of harmful chemicals in traditional laundry services, Ashish began researching safer, more effective cleaning solutions from around the globe.
 									At The Money Laundry, Ashish oversees the use of advanced, eco-friendly chemicals and technologies, ensuring that every garment is cleaned safely and effectively. His dedication to quality and sustainability underpins the company’s mission to offer superior, health-conscious services.</p>
 								</div>
