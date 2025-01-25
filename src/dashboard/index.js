@@ -19,7 +19,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     axios
-      .get("https://dev.moneylaundry.wenidi.com/api/book_now/orders/today")
+      .get("https://themoneylaundry.in/api/book_now/orders/today")
       .then((response) => {
         if(Array.isArray(response.data.data[0])) {
           console.log(response);
@@ -47,7 +47,7 @@ const Dashboard = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post("https://dev.moneylaundry.wenidi.com/api/book_now/orders/filterbyDate", {
+      const response = await axios.post("https://themoneylaundry.in/api/book_now/orders/filterbyDate", {
           startDate,
           endDate,
       });

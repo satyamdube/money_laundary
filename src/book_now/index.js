@@ -95,7 +95,7 @@ const BookNow = () => {
     }
 
     try {
-      const response = await fetch(`https://dev.moneylaundry.wenidi.com/api/book_now/checkCustomerEmail`, {
+      const response = await fetch(`https://themoneylaundry.in/api/book_now/checkCustomerEmail`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -174,7 +174,7 @@ const BookNow = () => {
 
     // API call
     try {
-      const response = await fetch("https://dev.moneylaundry.wenidi.com/api/book_now/booknow_data", {
+      const response = await fetch("https://themoneylaundry.in/api/book_now/booknow_data", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -55,7 +55,7 @@ const Contact = () => {
     }
 
     try {
-      const response = await fetch("https://dev.moneylaundry.wenidi.com/api/contactUs/registerContacts", {
+      const response = await fetch("https://themoneylaundry.in/api/contactUs/registerContacts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
