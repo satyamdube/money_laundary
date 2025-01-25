@@ -2,6 +2,19 @@
 .meetOurFounder{
     width:100%;
     display:inline-block;
+    background: url(../../public/images/about.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bannerDataI{
+    width:100%;
+    display:inline-block;
+    background: url(../../public/images/about.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-none{
+    background:none !important;
 }
 .headingInfo{
     width:100%;
@@ -181,11 +194,6 @@
     box-sizing: border-box;
     padding:0px 20px;
     box-sizing: border-box;
-}
-.meetOwnerInfo{
-    background: url(../../public/images/about.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 @media screen and (max-width:767px) {
     .meetOwnerInfo{
