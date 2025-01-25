@@ -12,6 +12,7 @@
     background: url(../../public/images/about.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:100% 100%;
 }
 .bg-none{
     background:none !important;
