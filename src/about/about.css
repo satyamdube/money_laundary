@@ -182,6 +182,11 @@
     padding:0px 20px;
     box-sizing: border-box;
 }
+.meetOwnerInfo{
+    background: url(../../public/images/about.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 @media screen and (max-width:767px) {
     .meetOwnerInfo{
         display:inline-block;
