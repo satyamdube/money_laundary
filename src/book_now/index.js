@@ -213,7 +213,9 @@ const BookNow = () => {
             <img src="./images/whiteLogo.png" alt="Washing machine" />
           </div>
           <span className="linerInfo"></span>
-          
+          <p>
+          Note: You may use Email to book your Order.
+          </p>
         </div>
         
         <div className="container">
