@@ -2,6 +2,13 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './footer.css';
 const Footer = () => {
+
+  const handleCall = (phoneNumber) => {
+    setTimeout(() => {
+      window.location.href = `tel:${phoneNumber}`;
+    }, 10000); 
+  };
+
   return (
     <footer id="colophon" className="site-footer" role="contentinfo">
       <span className="Whatsapp-widg">
@@ -12,8 +19,8 @@ const Footer = () => {
         </svg>
         </a>
       </span>
-      <span className="cc-calto-action-ripple">
-        <a href="tel:+91 92666 12700"><img src="./images/callIcon.png" alt="call"/></a><span className="num"></span>
+      <span className="cc-calto-action-ripple" onClick={() => handleCall("+919266612700")}>
+        <img src="./images/callIcon.png" alt="call"/><span className="num"></span>
       </span>
 	<div className="container">
 		<div className="site-info">

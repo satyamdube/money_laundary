@@ -8,59 +8,89 @@ const Privacy = () => {
 		<Header/>
         <div className="mt-5">
             <div className="container">
-                <div className="dataBoxInfo">
+                <div className="dataBoxxInfo">
                     <h3>Privacy Policy</h3>
-                    <p>This Privacy Policy is designed to govern the manner in which Money Laundry uses, maintains.</p>
+                    <p>The Money Laundry ("we", "our", "us") is committed to safeguarding the confidentiality and security of our customers, website, and mobile app users ("you", "your"). We declare that your personal information will not be disclosed to any third party unless required to provide a service to you. By accessing our website/app, you acknowledge reading and understanding this Privacy Policy and agree to be bound by its terms.</p>
                     <div><span className="washingLiner"></span></div>
                 </div>
                 <div className="perfectInfoFooter mb-5">
                 <div className="row featurette">
     <div className="col-sm-12">
         <div className="info-hsn">
-            <p>
+            {/* <p>
                 Published on 28th June 2021 This is as Agreement Between you or the entity that you represent (hereinafter “You” or “Your”) and Money Laundry TECHNOLOGIES PVT. LTD. (hereinafter “Money Laundry”) Governing your use of Money Laundry suite of
                 online Business.
-            </p>
+            </p> */}
         </div>
         <div className="info-hsn">
-            <h2>Terms Of Use</h2>
+            <h2>Cookies: </h2>
             <p>
-                We would request you to kindly read the terms of service carefully and consider these as the terms of agreement between you and us. This governs the use and access to the website and the services to you and your associates.
+            Our website uses cookies to distinguish users and enhance your experience. Cookies help us improve our site and services. For detailed information on the cookies we use, please refer to our Cookie Policy at www.themoneylaundry.in/cookies.
             </p>
+            <p>Information We Collect and How We Use It:</p>
+            <p>We collect and use your information for the following purposes:</p>
+            <p>To register you as a customer and provide you with our services.</p>
+            <p>To fulfill our contractual obligations and provide you with requested products and services.</p>
+            <p>To notify you about changes to our services.</p>
+            <p>To inform you about other similar goods and services that may be of interest to you.</p>
+            <p>To request your participation in surveys and service reviews.</p>
+            <p>To deliver relevant website content, app data, and advertisements, and measure their effectiveness.</p>
+
         </div>
         <div className="info-hsn">
-            <h2>Acceptance of the Terms</h2>
-            <p>By engaging with Money Laundry Technologies Pvt. Ltd, you agree to be bound by these terms and conditions. If you do not agree with any part of these terms, please do not use our services.</p>
+            <h2>Your Consent:</h2>
+            <p>We will not sell or rent your personal information (name, location, email, phone number, payment details) to any third party without your consent. However, we reserve the right to disclose information when legally required. We are not responsible for third-party actions that may have directed you to our website or app.</p>
         </div>
         <div className="info-hsn">
-            <h2>Scope of Services</h2>
-            <p>We will provide software consulting services as outlined in the project agreement or statement of work (SOW) agreed upon by both parties. Any changes to the scope must be agreed upon in writing.</p>
+            <h2>Communication & Marketing:</h2>
+            <p>By registering on our platform, you agree to receive promotional emails, notifications, and messages regarding offers, new services, or changes in service timings. If you wish to opt out of such communications, you can unsubscribe via the provided link or contact us at contactus@themoneylaundry.in</p>
         </div>
         <div className="info-hsn">
-            <h2>Fees and Payment</h2>
-            <p>You agree to pay the fees outlined in the project agreement or SOW. Payment terms and methods will also be specified in the agreement. Any additional expenses incurred during the project will be reimbursed by you.</p>
+            <h2>Protecting Your Security:</h2>
+            <p>Your information is stored securely. If you have a password for accessing certain sections of our website/app, you are responsible for keeping it confidential. While we take stringent security measures, data transmission over the internet is not entirely secure, and we cannot guarantee complete protection.</p>
         </div>
         <div className="info-hsn">
-            <h2>Intellectual Property</h2>
-            <p>Any intellectual property created as a result of our consulting services will be owned by you upon full payment of fees. We retain the right to use non-confidential project information for marketing purposes.</p>
+            <h2>Data Retention:</h2>
+            <p>If you contact us but do not enter into a contract, your data will be deleted after two years.</p>
+            <p>If you become our customer, we retain contract-related information for six years after contract termination or as required by law.</p>
         </div>
         <div className="info-hsn">
-            <h2>Confidentiality</h2>
-            <p>Both parties agree to maintain the confidentiality of any sensitive information exchanged during the course of the project. This includes business strategies, trade secrets, and proprietary information.</p>
+            <h2>Disclosure of Information:</h2>
+            <p>We may share your details with fraud prevention agencies for anti-fraud checks, but this does not affect your credit rating. We may also share information with partner entities to facilitate joint services like pickup and delivery. Additionally, we may use third-party providers to serve ads and analyze site traffic.</p>
         </div>
         <div className="info-hsn">
-            <h2>Term and Termination</h2>
-            <p>The agreement will remain in effect until the completion of the project, unless terminated by either party. Termination terms and conditions will be outlined in the project agreement.</p>
-            <h2>Warranties</h2>
-            <p>We warrant that our services will be performed with reasonable care and skill. However, we do not guarantee specific outcomes or results from our consulting services.</p>
-            <h2>Limitation of Liability</h2>
-            <p>Our liability for any claims arising from our services is limited to the fees paid by you. We are not liable for any indirect, incidental, or consequential damages.</p>
-            <h2>Governing Law</h2>
-            <p>These terms and conditions are governed by the laws of [Your Jurisdiction]. Any disputes arising from this agreement will be subject to the exclusive jurisdiction of the courts in [Your Jurisdiction].</p>
-            <h2>Amendments</h2>
-            <p>These terms and conditions may be updated from time to time. The latest version will be available on our website. Your continued use of our services after changes indicates your acceptance of the updated terms.</p>
-            <h2>Entire Agreement</h2>
-            <p>These terms and conditions, along with any project agreement or SOW, constitute the entire agreement between the parties and supersede any prior discussions or agreements.</p>
+            <h2>Usage of Demographic and Profile Data:</h2>
+            <h2>We use your data to:</h2>
+            <p>1. Provide the requested services.</p>
+            <p>2. Resolve disputes and troubleshoot issues.</p>
+            <p>3. Enhance safety and security.</p>
+            <p>4. Measure consumer interest in our services.</p>
+            <p>5. Inform you about offers, products, and updates.</p>
+            <p>6. Conduct optional online surveys.</p>
+            <p>7. You can opt out of marketing communications at any time. We will always obtain your explicit consent before sharing your data with third parties for marketing purposes.</p>
+        </div>
+        <div className="info-hsn">
+            <h2>Your Rights:</h2>
+            <p>Under applicable data protection laws, you have the right to:</p>
+            <p>1. Access your personal data.</p>
+            <p>2. Opt out of data processing for marketing purposes.</p>
+            <p>3. Withdraw consent for data processing.</p>
+            <p>4. Request corrections to inaccurate data.</p>
+            <p>5. Request data deletion where processing is no longer necessary.</p>
+            <p>6. Request data transfer in a machine-readable format.</p>
+            <p>7. Withdraw consent for the use of your name or image in promotions.</p>
+            <p>To exercise your rights, contact us at <a className="textDecor" href="mailto:contactus@themoneylaundry.in">contactus@themoneylaundry.in </a></p>
+        </div>
+        <div className="info-hsn">
+            <h2>Third-Party Links:</h2>
+            <p>Our website and app may contain links to third-party websites. These sites have independent privacy policies, and we are not responsible for their practices. Please review their policies before submitting any personal information.</p>
+        </div>
+        <div className="info-hsn">
+            <h2>Changes to Privacy Policy:</h2>
+            <p>We may update this Privacy Policy at any time. The revised policy takes effect immediately upon posting. Please review this page periodically for updates.</p>
+        </div>
+        <div className="info-hsn">
+        <h2>For any queries, contact our customer support team at <a className="textDecor" href="mailto:contactus@themoneylaundry.in">contactus@themoneylaundry.in</a>.</h2>
         </div>
     </div>
 </div>

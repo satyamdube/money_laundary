@@ -73,6 +73,20 @@ const Dashboard = () => {
     }
   };
   
+  const sendEmailToCustomer = async (orderId) => {
+    try {
+      const response = await axios.post("https://dev.moneylaundry.wenidi.com/api/book_now/email_customer", {
+        orderId,
+      });
+      if (response.status===200) {
+        alert("Email sent to customer successfully");
+      } else {
+        alert("Failed to send email");
+      }
+    } catch (error) {
+      alert("Error sending email");
+    }
+  };
 
   // Handle Search Filter
   const handleSearch = (e) => {
@@ -90,6 +104,7 @@ const Dashboard = () => {
   // Define columns for the table
   const columns = React.useMemo(
     () => [
+      { Header: "Order ID", accessor: "order_id" },
       {
         Header: "Order Pickup Date",
         accessor: "order_pickup_date",
@@ -103,6 +118,15 @@ const Dashboard = () => {
       { Header: "Customer Email", accessor: "customer_email" },
       { Header: "Customer Phone", accessor: "customer_phone" },
       { Header: "Customer Instruction", accessor: "order_instruction" },
+      {
+        Header: "Order Ready",
+        accessor: "order_ready",
+        Cell: ({ row }) => (
+          <button onClick={() => sendEmailToCustomer(row.original.order_id)}>
+            Send Email
+          </button>
+        ),
+      },
     ],
     []
   );
