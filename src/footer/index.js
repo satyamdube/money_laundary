@@ -3,10 +3,17 @@ import { NavLink } from 'react-router-dom';
 import './footer.css';
 const Footer = () => {
 
+  // const handleCall = (phoneNumber) => {
+  //   setTimeout(() => {
+  //     window.location.href = `tel:${phoneNumber}`;
+  //   }, 100); 
+  // };
+
   const handleCall = (phoneNumber) => {
-    setTimeout(() => {
-      window.location.href = `tel:${phoneNumber}`;
-    }, 10000); 
+    const newWindow = window.open(`tel:${phoneNumber}`, "_self");
+    if (newWindow) {
+      newWindow.opener = null; // Prevents the browser from closing the webpage
+    }
   };
 
   return (

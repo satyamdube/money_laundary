@@ -75,7 +75,7 @@ const Dashboard = () => {
   
   const sendEmailToCustomer = async (orderId) => {
     try {
-      const response = await axios.post("https://dev.moneylaundry.wenidi.com/api/book_now/email_customer", {
+      const response = await axios.post("https://themoneylaundry.in/api/book_now/email_customer", {
         orderId,
       });
       if (response.status===200) {
