@@ -68,7 +68,7 @@
     margin: 0 auto;
     display: inline-block; 
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:992px) {
     .perfectInfo{
         width:100% !important;
     }

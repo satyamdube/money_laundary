@@ -71,7 +71,7 @@
     border:1px solid #ccc;
     border-radius:3px;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:992px) {
     .d-flex.justify-contents-between.mt-5{
         flex-wrap:wrap;
     }

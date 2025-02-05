@@ -190,7 +190,7 @@
     margin:0px 0px 20px;
     font-weight:700;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:992px) {
     .perfectInfo{
         width:100% !important;
     }

@@ -134,7 +134,7 @@
   .termsData label{
     color:#fff;
   }
-  @media screen and (max-width:767px) {
+  @media screen and (max-width:992px) {
     .noteData{
         padding:0px;
     }
